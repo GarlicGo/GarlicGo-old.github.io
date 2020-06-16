@@ -207,7 +207,7 @@
       <div class="m_search">
         <form name="searchform" class="form u-search-form">
           <i class="icon fas fa-search fa-fw"></i>
-          <input type="text" class="input u-search-input" placeholder="Search..." />
+          <input type="text" class="input u-search-input" placeholder="" />
         </form>
       </div>
 
@@ -360,7 +360,7 @@
         
           
   <h2 class="title">
-    <a href="/2020/06/16/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E8%AE%BF%E9%97%AE%E4%B9%B1%E7%89%88%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/">
+    <a href="/z_post/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E8%AE%BF%E9%97%AE%E4%B9%B1%E7%89%88%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/">
       Hexo静态博客部署到GitHub访问乱版问题的解决
     </a>
   </h2>
@@ -419,21 +419,16 @@
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><ol>
-<li><a href="#title1">问题描述</a></li>
-<li><a href="#title2">解决方案</a></li>
-</ol>
-<h5 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a><span id="title1">问题描述：</span></h5><p>今天选了好久Hexo的皮肤，本地预览也没有任何问题，结果部署到GitHub再打开就一下乱版了，下面是对比图：</p>
-<p>本地预览 ↓<br><img src="https://img-blog.csdnimg.cn/20200616133002176.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="本地预览图"><br>部署后的效果 ↓<br><img src="https://img-blog.csdnimg.cn/20200616133119520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>瞬间心都碎了有没有！</p>
-<h5 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a><span id="title2">解决方案：</span></h5><p>搜来搜去也不知道是怎么回事，突然我想到我访问GitHub也一直有类似的情况（比如图片加载不出来，访问速度缓慢等等），会不会是这个原因导致的。<br>之前我访问GitHub的情况 ↓<br><img src="https://img-blog.csdnimg.cn/20200616133318134.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="\[图片\]"><br>于是我按照网上的做法修改了host文件，具体操作如下：<br>在系统目录：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Windows\System32\drivers\etc\hosts</span><br></pre></td></tr></table></figure>
-<p>用编辑器打开此处的host文件，然后在文件最后加上如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#GitHub Start</span><br><span class="line">192.30.253.112 Build software better, together</span><br><span class="line">192.30.253.119 gist.github.com</span><br><span class="line">151.101.184.133 assets-cdn.github.com</span><br><span class="line">151.101.184.133 raw.githubusercontent.com</span><br><span class="line">151.101.184.133 gist.githubusercontent.com</span><br><span class="line">151.101.184.133 cloud.githubusercontent.com</span><br><span class="line">151.101.184.133 camo.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars0.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars1.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars2.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars3.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars4.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars5.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars6.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars7.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars8.githubusercontent.com</span><br><span class="line">#GitHub End</span><br></pre></td></tr></table></figure>
-<p>保存之后，可以发现我的GitHub加载正常了（速度还没测怎么样）↓<br><img src="https://img-blog.csdnimg.cn/20200616133847867.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>然后再访问部署在GitHub上的Hexo博客，也恢复正常了↓<br><img src="https://img-blog.csdnimg.cn/20200616133942223.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-
+        <p>今天选了好久Hexo的皮肤，本地预览也没有任何问题，结果部署到GitHub再打开就一下乱版了<br><img src="https://img-blog.csdnimg.cn/20200616133119520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="乱版情况"></p>
       
     </div>
     
+      
+        <div class="button readmore">
+          <a href="/z_post/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E8%AE%BF%E9%97%AE%E4%B9%B1%E7%89%88%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/">
+            阅读全文 <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
       
     
   </section>
@@ -780,7 +775,7 @@
 
 
   
-<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.6.5/js/search.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.6.4/js/search.js"></script>
 
 
 

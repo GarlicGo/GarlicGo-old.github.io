@@ -16,8 +16,12 @@
 
   <!-- 页面元数据 -->
   
-    <title>鼠标右键没有【用管理员身份运行命令行】时的解决办法 - 放开那只大蒜的小站</title>
+    <title>Hexo静态博客部署到GitHub访问乱版问题的解决 - 放开那只大蒜的小站</title>
   
+    <meta name="keywords" content="Hexo,静态博客">
+  
+  
+    <meta name="description" content="今天选了好久Hexo的皮肤，本地预览也没有任何问题，结果部署到GitHub再打开就一下乱版了">
   
 
   <!-- feed -->
@@ -205,7 +209,7 @@
       <div class="m_search">
         <form name="searchform" class="form u-search-form">
           <i class="icon fas fa-search fa-fw"></i>
-          <input type="text" class="input u-search-input" placeholder="Search..." />
+          <input type="text" class="input u-search-input" placeholder="" />
         </form>
       </div>
 
@@ -345,8 +349,8 @@
         
           
   <h1 class="title">
-    <a href="/2020/06/16/%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E6%B2%A1%E6%9C%89%E3%80%90%E7%94%A8%E7%AE%A1%E7%90%86%E5%91%98%E8%BA%AB%E4%BB%BD%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4%E8%A1%8C%E3%80%91%E6%97%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">
-      鼠标右键没有【用管理员身份运行命令行】时的解决办法
+    <a href="/z_post/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E8%AE%BF%E9%97%AE%E4%B9%B1%E7%89%88%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/">
+      Hexo静态博客部署到GitHub访问乱版问题的解决
     </a>
   </h1>
 
@@ -399,7 +403,20 @@
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
           
-          <p>今天碰到了一个情况，要用管理员身份去执行一些指令。<br>但是我右键点击某个文件或者文件夹时，没有“用管理员身份运行”这个选项，而且网上的某些做法在window10家庭版上并不可行，那该怎么办呢？<br>最后发现，搜索“命令提示符”，再右键点击“以管理员身份运行”，之后再切换到指定目录就行了。<br><img src="https://img-blog.csdnimg.cn/20200616134428913.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+          <p>今天选了好久Hexo的皮肤，本地预览也没有任何问题，结果部署到GitHub再打开就一下乱版了<br><img src="https://img-blog.csdnimg.cn/20200616133119520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="乱版情况"></p>
+<a id="more"></a>
+
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><ol>
+<li><a href="#title1">问题描述</a></li>
+<li><a href="#title2">解决方案</a></li>
+</ol>
+<h5 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a><span id="title1">问题描述：</span></h5><p>下面是对比图：</p>
+<p>本地预览 ↓<br><img src="https://img-blog.csdnimg.cn/20200616133002176.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="本地预览图"><br>部署后的效果 ↓<br><img src="https://img-blog.csdnimg.cn/20200616133119520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="部署后的效果"><br>瞬间心都碎了有没有！</p>
+<h5 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a><span id="title2">解决方案：</span></h5><p>搜来搜去也不知道是怎么回事，突然我想到我访问GitHub也一直有类似的情况（比如图片加载不出来，访问速度缓慢等等），会不会是这个原因导致的。<br>之前我访问GitHub的情况 ↓<br>![GitHub]](<a href="https://img-blog.csdnimg.cn/20200616133318134.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" target="_blank" rel="noopener">https://img-blog.csdnimg.cn/20200616133318134.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70</a>)<br>于是我按照网上的做法修改了host文件，具体操作如下：<br>在系统目录：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Windows\System32\drivers\etc\hosts</span><br></pre></td></tr></table></figure>
+<p>用编辑器打开此处的host文件，然后在文件最后加上如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#GitHub Start</span><br><span class="line">192.30.253.112 Build software better, together</span><br><span class="line">192.30.253.119 gist.github.com</span><br><span class="line">151.101.184.133 assets-cdn.github.com</span><br><span class="line">151.101.184.133 raw.githubusercontent.com</span><br><span class="line">151.101.184.133 gist.githubusercontent.com</span><br><span class="line">151.101.184.133 cloud.githubusercontent.com</span><br><span class="line">151.101.184.133 camo.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars0.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars1.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars2.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars3.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars4.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars5.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars6.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars7.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars8.githubusercontent.com</span><br><span class="line">#GitHub End</span><br></pre></td></tr></table></figure>
+<p>保存之后，可以发现我的GitHub加载正常了（速度还没测怎么样）↓<br><img src="https://img-blog.csdnimg.cn/20200616133847867.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="GitHub"><br>然后再访问部署在GitHub上的Hexo博客，也恢复正常了↓<br><img src="https://img-blog.csdnimg.cn/20200616133942223.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="Hexo"></p>
 
           
             <div class='article_footer'>
@@ -488,7 +505,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-06-16T16:42:18+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-06-16T19:20:59+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2020年6月16日</p>
@@ -499,6 +516,9 @@
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Hexo</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>静态博客</p></a></div>
+
 
         
       
@@ -515,7 +535,7 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/06/16/%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E6%B2%A1%E6%9C%89%E3%80%90%E7%94%A8%E7%AE%A1%E7%90%86%E5%91%98%E8%BA%AB%E4%BB%BD%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4%E8%A1%8C%E3%80%91%E6%97%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/&title=鼠标右键没有【用管理员身份运行命令行】时的解决办法 - 放开那只大蒜的小站&summary="
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://garlicgo.github.io/z_post/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E8%AE%BF%E9%97%AE%E4%B9%B1%E7%89%88%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/&title=Hexo静态博客部署到GitHub访问乱版问题的解决 - 放开那只大蒜的小站&summary=今天选了好久Hexo的皮肤，本地预览也没有任何问题，结果部署到GitHub再打开就一下乱版了"
           
           >
           
@@ -527,7 +547,7 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2020/06/16/%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E6%B2%A1%E6%9C%89%E3%80%90%E7%94%A8%E7%AE%A1%E7%90%86%E5%91%98%E8%BA%AB%E4%BB%BD%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4%E8%A1%8C%E3%80%91%E6%97%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/&title=鼠标右键没有【用管理员身份运行命令行】时的解决办法 - 放开那只大蒜的小站&summary="
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://garlicgo.github.io/z_post/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E8%AE%BF%E9%97%AE%E4%B9%B1%E7%89%88%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/&title=Hexo静态博客部署到GitHub访问乱版问题的解决 - 放开那只大蒜的小站&summary=今天选了好久Hexo的皮肤，本地预览也没有任何问题，结果部署到GitHub再打开就一下乱版了"
           
           >
           
@@ -539,7 +559,7 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/06/16/%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E6%B2%A1%E6%9C%89%E3%80%90%E7%94%A8%E7%AE%A1%E7%90%86%E5%91%98%E8%BA%AB%E4%BB%BD%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4%E8%A1%8C%E3%80%91%E6%97%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/&title=鼠标右键没有【用管理员身份运行命令行】时的解决办法 - 放开那只大蒜的小站&summary="
+          href="http://service.weibo.com/share/share.php?url=http://garlicgo.github.io/z_post/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E8%AE%BF%E9%97%AE%E4%B9%B1%E7%89%88%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/&title=Hexo静态博客部署到GitHub访问乱版问题的解决 - 放开那只大蒜的小站&summary=今天选了好久Hexo的皮肤，本地预览也没有任何问题，结果部署到GitHub再打开就一下乱版了"
           
           >
           
@@ -563,15 +583,25 @@
         
           <div class="prev-next">
             
-            
-              <a class='next' href='/2020/06/16/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E8%AE%BF%E9%97%AE%E4%B9%B1%E7%89%88%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/'>
-                <p class='title'>Hexo静态博客部署到GitHub访问乱版问题的解决<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-                <p class='content'>目录
-问题描述
-解决方案
+              <a class='prev' href='/z_post/%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E6%B2%A1%E6%9C%89%E3%80%90%E7%94%A8%E7%AE%A1%E7%90%86%E5%91%98%E8%BA%AB%E4%BB%BD%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4%E8%A1%8C%E3%80%91%E6%97%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/'>
+                <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>鼠标右键没有【用管理员身份运行命令行】时的解决办法</p>
+                <p class='content'>今天碰到了一个情况，要用管理员身份去执行一些指令。但是我右键点击某个文件或者文件夹时，没有“用管理员身份运行”这个选项，而且网上的某些做法在window10家庭版上并不可行，那该怎么办呢？
 
-问题描述：今天选了好久Hexo的皮肤，本地预览也没有任何问题，结果部署到GitHub再打开就一下乱版了，下面是对比图：
-本地预览 ↓部署后的效果 ↓瞬间心都碎了有没有...</p>
+
+...</p>
+              </a>
+            
+            
+              <a class='next' href='/z_post/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E6%9C%AF%EF%BC%9AExcel+%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%84%E7%90%86VCF%E4%B8%8ECSV%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%B7%BB%E5%8A%A0%E8%81%94%E7%B3%BB%E4%BA%BA/'>
+                <p class='title'>实用小技术：Excel+网易邮箱处理VCF与CSV文件批量添加联系人<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'>Excel+网易邮箱处理VCF与CSV文件批量添加联系人，简直不要太轻松。
+
+
+
+目录
+VCF与CSV文件简单介绍（真的是“简单”介绍）
+为什么选择网易邮箱？（网易与QQ邮箱的简单对比）
+利用E...</p>
               </a>
             
           </div>
@@ -616,7 +646,7 @@
 
   <script>
     window.subData = {
-      title: '鼠标右键没有【用管理员身份运行命令行】时的解决办法',
+      title: 'Hexo静态博客部署到GitHub访问乱版问题的解决',
       tools: true
     }
   </script>
@@ -631,6 +661,20 @@
     
     
 
+
+  <section class="widget toc-wrapper shadow desktop mobile">
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#目录"><span class="toc-text">目录</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#问题描述："><span class="toc-text">问题描述：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#解决方案："><span class="toc-text">解决方案：</span></a></li></ol></li></ol>
+    </div>
+  </section>
 
 
   
@@ -901,7 +945,7 @@
 
 
   
-<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.6.5/js/search.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.6.4/js/search.js"></script>
 
 
 

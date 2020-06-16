@@ -89,7 +89,7 @@
     
       <div class="m_search">
         <form name="searchform" class="form u-search-form">
-          <input type="text" class="input u-search-input" placeholder="搜索" />
+          <input type="text" class="input u-search-input" placeholder="搜索发现更多精彩" />
           <i class="icon fas fa-search fa-fw"></i>
         </form>
       </div>
@@ -301,7 +301,7 @@
       <div class="m_search">
         <form name="searchform" class="form u-search-form">
           <i class="icon fas fa-search fa-fw"></i>
-          <input type="text" class="input u-search-input" placeholder="Search..." />
+          <input type="text" class="input u-search-input" placeholder="" />
         </form>
       </div>
 
@@ -453,7 +453,7 @@
         
           
   <h2 class="title">
-    <a href="/2020/02/05/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E6%9C%AF%EF%BC%9AExcel+%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%84%E7%90%86VCF%E4%B8%8ECSV%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%B7%BB%E5%8A%A0%E8%81%94%E7%B3%BB%E4%BA%BA/">
+    <a href="/z_post/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E6%9C%AF%EF%BC%9AExcel+%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%84%E7%90%86VCF%E4%B8%8ECSV%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%B7%BB%E5%8A%A0%E8%81%94%E7%B3%BB%E4%BA%BA/">
       实用小技术：Excel+网易邮箱处理VCF与CSV文件批量添加联系人
     </a>
   </h2>
@@ -512,51 +512,17 @@
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><ul>
-<li>VCF与CSV文件简单介绍（真的是“简单”介绍）</li>
-<li>为什么选择网易邮箱？（网易与QQ邮箱的简单对比）</li>
-<li>利用Excel+网易邮箱生成CSV与VCF文件</li>
-<li>利用网易邮箱解决CSV与VCF文件的乱码问题</li>
-</ul>
-<p><strong>一、VCF与CSV文件简单介绍</strong></p>
-<p>VCF是通讯录导出的一种格式，CSV是以纯文本形式存储表格数据的文件格式，其后缀名分别是.vcf、.csv。</p>
-<blockquote>
-<p>百度百科：<a href="https://baike.baidu.com/item/VCF/22542907" target="_blank" rel="noopener">VCF</a>    、<a href="https://baike.baidu.com/item/CSV/10739?fr=aladdin" target="_blank" rel="noopener">CSV</a></p>
-</blockquote>
-<p>看不懂？没关系。说实话我到现在都不知道我写的什么，只是为了高逼格地开个头。</p>
-<p>你只需要记住VCF和CSV是两种文件格式，长成下面这个样子：<br><img src="https://img-blog.csdnimg.cn/20200205170408676.png" alt="CSV、VCF文件截图"></p>
-<p>它们都能够存储跟联系人相关的信息。但是手机通信录和电脑通信录中的联系方式只能用VCF导入，同时也可以生成VCF文件。而一般的邮箱通信录（比如网易邮箱通信录、QQ邮箱通信录）既可以使用VCF导入联系方式，也可以使用CSV，同时也能生成这两种文件。</p>
-<p>通过上图.csv的图标就可以看出，CSV文件是可以使用Excel打开的，长这个样子：<br><img src="https://img-blog.csdnimg.cn/20200205170200547.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="Excel打开CSV文件">但是VCF文件就比较复杂了，不可以使用Excel打开，用记事本打开是这个样子的：<br><img src="https://img-blog.csdnimg.cn/20200205170650198.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="记事本打开VCF文件"><br>说了这么多，其实只是为了说明下面这个关系：<br><img src="https://img-blog.csdnimg.cn/20200205170759677.png" alt="关系图"></p>
-<ul>
-<li>手机、电脑通信录：只能识别VCF文件，不能识别CSV文件，并且可以生成（导出）VCF文件。</li>
-<li>VCF文件：可以通过通信录生成（导出）、也可以通过邮箱通信录生成（导出）。当然还有其他别的方式。</li>
-<li>网易邮箱：可以识别VCF和CSV文件，也可以生成（导出）VCF和CSV文件。</li>
-<li>CSV文件：可以导入邮箱通信录，也可以使用Excel打开，同时也可以使用邮箱通信录和Excel生成。</li>
-<li>Excel：可以打开、生成（导出）CSV文件。</li>
-</ul>
-<p><strong>二、为什么选择网易邮箱？（网易与QQ邮箱的简单对比）</strong></p>
-<p>其实网易邮箱可以做的事情，QQ也同样能做。下面说一下我自己使用起来两者的优点。<br>|名称| 优点 |<br>|–|–|<br>| 网易邮箱 |  ①导入快，是真的快，几百人的VCF文件网易也就几秒，QQ邮箱得老半天；②当CSV文件字段内容和网易邮箱字段不同时会给提示。|<br>| QQ邮箱 | ①可以使用QQ登录，对我来说更方便。 |</p>
-<p><strong>三、利用Excel+网易邮箱生成CSV与VCF文件</strong></p>
-<p>1.获得CSV文件，并添加信息重新导入</p>
-<ul>
-<li>利用网易邮箱获取</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/202002052027219.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="网易邮箱导出联系人"><br>点击网易邮箱通信录右侧的“导入导出→导出通信录”：↑<br><img src="https://img-blog.csdnimg.cn/20200205202910371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="导出CSV"><br>选择CSV格式即可获得一份CSV格式文件，然后打开文件在字段中添加内容：↑↓<br><img src="https://img-blog.csdnimg.cn/20200205203122487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>将添加信息后的CSV文件保存，重新打开网易邮箱，点击“导入导出→从文件导入通信录”：↓<br><img src="https://img-blog.csdnimg.cn/20200205203341393.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>选择好文件导入指定分组即可：↓<br><img src="https://img-blog.csdnimg.cn/20200205203451401.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<ul>
-<li>利用Excel获取</li>
-</ul>
-<p>除了利用邮箱导出字段较为完整的CSV文件，利用Excel也可以自己创建一些比较简单CSV文件，并添加一些数据。<br><img src="https://img-blog.csdnimg.cn/2020020522092685.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>新建一个Excel表格，然后添加两个字段（姓名，手机），然后添加一些内容：↑<br><img src="https://img-blog.csdnimg.cn/20200205221031217.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="另存为CSV"><br>然后另存为“CSV(逗号分隔)(*.csv)”，即可生成一个CSV文件（可导入邮箱通信录）：↑</p>
-<p>2.获得VCF文件，并将联系人导入手机、电脑通信录</p>
-<ul>
-<li>利用网易邮箱获取</li>
-</ul>
-<p>与利用网易邮箱获取CSV文件一样，点击网易邮箱通信录右侧的“导入导出→导出通信录”：↓<br><img src="https://img-blog.csdnimg.cn/20200205221359502.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="导出VCF"><br>然后将生成的文件发送给手机，使用手机通信录打开即可：↓<br><img src="https://img-blog.csdnimg.cn/20200205221536306.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><strong>四、利用网易邮箱解决CSV与VCF文件的乱码问题</strong></p>
-<p>其实除了上述的方式，有一种专门用来编辑VCF文件的软件叫做VCF Editor（如下图）：<br><img src="https://img-blog.csdnimg.cn/20200205173948361.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>但是有些VCF文件用VCF Editor打开（或者CSV用Excel打开）会出现乱码的情况，如下图：<br><img src="https://img-blog.csdnimg.cn/20200205174103808.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>此时只是打开的VCF的字符集的问题，把出现上述问题的VCF文件导入网易邮箱通信录是不会出现乱码的。只需要导入邮箱通信录，再使用邮箱生成VCF文件，新生成的VCF文件就不会出现乱码问题了。</p>
-
+        <p>Excel+网易邮箱处理VCF与CSV文件批量添加联系人，简直不要太轻松。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200205170408676.png" alt="CSV、VCF文件截图"></p>
       
     </div>
     
+      
+        <div class="button readmore">
+          <a href="/z_post/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E6%9C%AF%EF%BC%9AExcel+%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%84%E7%90%86VCF%E4%B8%8ECSV%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%B7%BB%E5%8A%A0%E8%81%94%E7%B3%BB%E4%BA%BA/">
+            阅读全文 <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
       
     
   </section>
@@ -910,7 +876,7 @@
 
 
   
-<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.6.5/js/search.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.6.4/js/search.js"></script>
 
 
 
