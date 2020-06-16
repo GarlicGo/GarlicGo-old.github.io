@@ -5,6 +5,8 @@
   <!-- SEO相关 -->
   
     
+      <meta name="robots" content="noindex,follow">
+    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -16,7 +18,7 @@
 
   <!-- 页面元数据 -->
   
-    <title>实用小技术：Excel+网易邮箱处理VCF与CSV文件批量添加联系人 - 放开那只大蒜的小站</title>
+    <title>归档：2020/2 - 放开那只大蒜的小站</title>
   
   
 
@@ -70,7 +72,39 @@
 
 <body>
   
-  <div id="loading-bar-wrapper">
+  <div class="cover-wrapper">
+    
+      <cover class='cover  half'>
+        <div class='cover-body'>
+  <div class='a'>
+    
+    
+      <p class="title">放开那只大蒜的小站</p>
+    
+    
+      <p class="subtitle">Record Every Bit of Technology</p>
+    
+  </div>
+  <div class='b'>
+    
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <input type="text" class="input u-search-input" placeholder="搜索" />
+          <i class="icon fas fa-search fa-fw"></i>
+        </form>
+      </div>
+    
+    <div class='menu navigation'>
+      <ul class='cover-list-h'>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+      </cover>
+    
+    <div id="loading-bar-wrapper">
   <div id="loading-bar"></div>
 </div>
 <header class="l_header shadow blur">
@@ -323,18 +357,30 @@
 
 <script>setLoadingBarProgress(40);</script>
 
+  </div>
 
 
-  <div class="l_body nocover">
+  <div class="l_body">
     <div class='body-wrapper'>
       
 
 <div class='l_main'>
-  
-
-  
-    <article id="post" class="post white-box reveal shadow article-type-post" itemscope itemprop="blogPost">
+	
+		
+  <section class="post-list ">
+    
       
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <article class="post white-box shadow reveal ">
+  
 
 
   <section class='meta'>
@@ -344,11 +390,11 @@
       <div class="meta" id="header-meta">
         
           
-  <h1 class="title">
-    <a href="/2020/06/16/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E6%9C%AF%EF%BC%9AExcel+%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%84%E7%90%86VCF%E4%B8%8ECSV%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%B7%BB%E5%8A%A0%E8%81%94%E7%B3%BB%E4%BA%BA/">
+  <h2 class="title">
+    <a href="/2020/02/05/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E6%9C%AF%EF%BC%9AExcel+%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%84%E7%90%86VCF%E4%B8%8ECSV%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%B7%BB%E5%8A%A0%E8%81%94%E7%B3%BB%E4%BA%BA/">
       实用小技术：Excel+网易邮箱处理VCF与CSV文件批量添加联系人
     </a>
-  </h1>
+  </h2>
 
 
         
@@ -376,9 +422,14 @@
               <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年6月16日</p>
+    <p>发布于：2020年2月5日</p>
   </a>
 </div>
+
+            
+          
+            
+              
 
             
           
@@ -396,10 +447,10 @@
   </section>
 
 
-      <section class="article typo">
-        <div class="article-entry" itemprop="articleBody">
-          
-          <h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><ul>
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><ul>
 <li>VCF与CSV文件简单介绍（真的是“简单”介绍）</li>
 <li>为什么选择网易邮箱？（网易与QQ邮箱的简单对比）</li>
 <li>利用Excel+网易邮箱生成CSV与VCF文件</li>
@@ -441,256 +492,100 @@
 <p><strong>四、利用网易邮箱解决CSV与VCF文件的乱码问题</strong></p>
 <p>其实除了上述的方式，有一种专门用来编辑VCF文件的软件叫做VCF Editor（如下图）：<br><img src="https://img-blog.csdnimg.cn/20200205173948361.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>但是有些VCF文件用VCF Editor打开（或者CSV用Excel打开）会出现乱码的情况，如下图：<br><img src="https://img-blog.csdnimg.cn/20200205174103808.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>此时只是打开的VCF的字符集的问题，把出现上述问题的VCF文件导入网易邮箱通信录是不会出现乱码的。只需要导入邮箱通信录，再使用邮箱生成VCF文件，新生成的VCF文件就不会出现乱码问题了。</p>
 
-          
-            <div class='article_footer'>
-              
-                
-  
-    
-    
-
-
-
-  
-
-  
-    
-    
-
-
-
-  
-
-  
-    
-    
-
-<section class="widget copyright  desktop mobile">
-  <div class='content'>
-    
-      <blockquote>
-        
-          
-            <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
-
-          
-        
-          
-            <p>写作不易，欢迎打赏</p>
-
-          
-        
-      </blockquote>
-    
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
-<section class="widget qrcode  desktop mobile">
-  
-
-  <div class='content article-entry'>
-    
-      
-        <div class='fancybox'><img src='http://i2.tiimg.com/721393/745b5e3e18ec5602.jpg'
-        
-          height='64px'
-        ></div>
-      
-    
-      
-        <div class='fancybox'><img src='http://i2.tiimg.com/721393/764f1254be9cc6c3.jpg'
-        
-          height='64px'
-        ></div>
-      
-    
-  </div>
-</section>
-
-  
-
-
-              
-            </div>
-          
-        </div>
-        
-          
-
-
-  <section class='meta' id="footer-meta">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-06-16T16:39:21+08:00">
-  <a class='notlink'>
-    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年6月16日</p>
-  </a>
-</div>
-
-        
-      
-        
-          
-
-        
-      
-        
-          
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
-    
-      
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
-          
-          href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/06/16/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E6%9C%AF%EF%BC%9AExcel+%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%84%E7%90%86VCF%E4%B8%8ECSV%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%B7%BB%E5%8A%A0%E8%81%94%E7%B3%BB%E4%BA%BA/&title=实用小技术：Excel+网易邮箱处理VCF与CSV文件批量添加联系人 - 放开那只大蒜的小站&summary="
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qq.png">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
-          
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoursite.com/2020/06/16/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E6%9C%AF%EF%BC%9AExcel+%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%84%E7%90%86VCF%E4%B8%8ECSV%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%B7%BB%E5%8A%A0%E8%81%94%E7%B3%BB%E4%BA%BA/&title=实用小技术：Excel+网易邮箱处理VCF与CSV文件批量添加联系人 - 放开那只大蒜的小站&summary="
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qzone.png">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
-          
-          href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/06/16/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E6%9C%AF%EF%BC%9AExcel+%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%84%E7%90%86VCF%E4%B8%8ECSV%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%B7%BB%E5%8A%A0%E8%81%94%E7%B3%BB%E4%BA%BA/&title=实用小技术：Excel+网易邮箱处理VCF与CSV文件批量添加联系人 - 放开那只大蒜的小站&summary="
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/weibo.png">
-          
-        </a>
-      
-    
-  </div>
-</div>
-
-
-
-        
       
     </div>
+    
+      
+    
   </section>
+</article>
 
-
-        
-        
-          <div class="prev-next">
-            
-              <a class='prev' href='/2020/06/16/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E8%AE%BF%E9%97%AE%E4%B9%B1%E7%89%88%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/'>
-                <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Hexo静态博客部署到GitHub访问乱版问题的解决</p>
-                <p class='content'>目录
-问题描述
-解决方案
-
-问题描述：今天选了好久Hexo的皮肤，本地预览也没有任何问题，结果部署到GitHub再打开就一下乱版了，下面是对比图：
-本地预览 ↓部署后的效果 ↓瞬间心都碎了有没有...</p>
-              </a>
-            
-            
-              <a class='next' href='/2020/06/16/%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E6%B2%A1%E6%9C%89%E3%80%90%E7%94%A8%E7%AE%A1%E7%90%86%E5%91%98%E8%BA%AB%E4%BB%BD%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4%E8%A1%8C%E3%80%91%E6%97%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/'>
-                <p class='title'>鼠标右键没有【用管理员身份运行命令行】时的解决办法<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-                <p class='content'>今天碰到了一个情况，要用管理员身份去执行一些指令。但是我右键点击某个文件或者文件夹时，没有“用管理员身份运行”这个选项，而且网上的某些做法在window10家庭版上并不可行，那该怎么办呢？最后发...</p>
-              </a>
-            
           </div>
         
-      </section>
-    </article>
+      
+    
+  </section>
   
-
-  
-    <!-- 显示推荐文章和评论 -->
-
-
-
-  <article class="post white-box reveal comments shadow">
-    <section class="article typo">
-      <p ct><i class='fas fa-comments'></i> 评论</p>
-      
-      
-      
-      
-      
-      
-        <section id="comments">
-          <div id="valine_container" class="valine_thread">
-            <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
-          </div>
-        </section>
-      
-      
-    </section>
-  </article>
-
+    
+    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+    
+    
 
   
 
 
-
-
-<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
-
-
-
-  <script>
-    window.subData = {
-      title: '实用小技术：Excel+网易邮箱处理VCF与CSV文件批量添加联系人',
-      tools: true
-    }
-  </script>
-
-
+	
 </div>
 <aside class='l_side'>
   
   
+    
+    
+
+<section class="widget blogger shadow desktop mobile">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box' href='/about/'>
+          <img no-lazy src='http://i2.tiimg.com/721393/e3b3151a832e42ad.jpg'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+        
+        
+          <p><span id="jinrishici-sentence">放开那只大蒜的小站</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="mailto:582149912@qq.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://github.com/garlicgo"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="http://music.163.com/playlist?id=4946193794&userid=505375679"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+  
 
   
     
     
 
+  
 
-  <section class="widget toc-wrapper shadow desktop mobile">
+  
     
-  <header>
     
-      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
-    
-  </header>
 
-
-    <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#目录"><span class="toc-text">目录</span></a></li></ol>
-    </div>
-  </section>
-
+  
 
   
 
@@ -781,6 +676,14 @@
   </footer>
 
 <script>setLoadingBarProgress(80);</script>
+
+
+
+
+	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+	
+
+	
 
 
       <script>setLoadingBarProgress(60);</script>
@@ -895,60 +798,6 @@
 
 
 
-
-  
-    
-<script src="https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js"></script>
-
-  
-  <script>
-  var GUEST_INFO = ['nick','mail','link'];
-  var meta = 'nick,mail,link'.split(',').filter(function(item){
-    return GUEST_INFO.indexOf(item) > -1
-  });
-  var REQUIRED_FIELDS = ['nick','mail','link'];
-  var requiredFields = 'nick,mail'.split(',').filter(function(item){
-    return REQUIRED_FIELDS.indexOf(item) > -1
-  });
-  var valine = new Valine();
-  function emoji(path, idx, ext) {
-      return path + "/" + path + "-" + idx + "." + ext;
-  }
-  var emojiMaps = {};
-  for (var i = 1; i <= 54; i++) {
-    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
-  }
-  for (var i = 1; i <= 101; i++) {
-    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
-  }
-  for (var i = 1; i <= 116; i++) {
-    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
-  }
-  for (var i = 1; i <= 125; i++) {
-    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
-  }
-  for (var i = 1; i <= 4; i++) {
-    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
-  }
-  valine.init({
-    el: '#valine_container',
-    meta: meta,
-    
-    appId: "dogUA2FSKGTo029M1SEwGROT-MdYXbMMI",
-    appKey: "u0NdtQ8nvHoMdJPSYqm1LRxE",
-    placeholder: "快来评论吧~",
-    pageSize:'10',
-    avatar:'robohash',
-    lang:'zh-cn',
-    visitor: 'true',
-    highlight: 'true',
-    mathJax: 'false',
-    enableQQ: 'true',
-    requiredFields: requiredFields,
-    emojiCDN: 'https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/valine/',
-    emojiMaps: emojiMaps
-  })
-  </script>
 
 
 
