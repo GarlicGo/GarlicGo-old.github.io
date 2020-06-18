@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -18,7 +16,9 @@
 
   <!-- 页面元数据 -->
   
-    <title>标签：历史 - 放开那只大蒜的小站</title>
+    <title>Java基本数据类型 - 放开那只大蒜的小站</title>
+  
+    <meta name="keywords" content="Java">
   
   
 
@@ -330,25 +330,12 @@
   <div class="l_body nocover">
     <div class='body-wrapper'>
       
-    
-        <div class='l_main '>
-            
-                
-                        
-  <section class="post-list ">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box shadow reveal ">
+<div class='l_main'>
   
+
+  
+    <article id="post" class="post white-box reveal shadow article-type-post" itemscope itemprop="blogPost">
+      
 
 
   <section class='meta'>
@@ -358,11 +345,11 @@
       <div class="meta" id="header-meta">
         
           
-  <h2 class="title">
-    <a href="/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89Java%E7%9A%84%E5%89%8D%E4%B8%96%E4%B8%8E%E4%BB%8A%E7%94%9F/">
-      Java的前世与今生
+  <h1 class="title">
+    <a href="/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+      Java基本数据类型
     </a>
-  </h2>
+  </h1>
 
 
         
@@ -398,14 +385,9 @@
               <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2019年5月13日</p>
+    <p>发布于：2019年11月10日</p>
   </a>
 </div>
-
-            
-          
-            
-              
 
             
           
@@ -423,94 +405,190 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>印度尼西亚有一个盛产咖啡的岛屿叫做Java，其中文译名为爪哇，SUN公司的开发人员为他们开发的一种新语言起名为Java，其寓意是“为世人端上一杯热咖啡”……<br><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2374635544,2504122285&fm=26&gp=0.jpg" alt="Java"></p>
-      
-    </div>
-    
-      
-        <div class="button readmore">
-          <a href="/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89Java%E7%9A%84%E5%89%8D%E4%B8%96%E4%B8%8E%E4%BB%8A%E7%94%9F/">
-            阅读全文 <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-      
-    
-  </section>
-</article>
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          
+          <p><img src="http://09imgmini.eastday.com/mobile/20181212/20181212223811_986eb6c59a1e0932e9585d2117746faa_1.jpeg" alt="Java基本数据类型"></p>
+<a id="more"></a>
 
-          </div>
-        
-      
-    
-  </section>
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><ol>
+<li>整型</li>
+<li>浮点类型</li>
+<li>字符类型</li>
+<li>布尔类型</li>
+</ol>
+<p>Java是一种强类型语言，这就意味着必须为每一个变量声明一种类型。Java中的数据类型可分为基本数据类型和引用数据类型两种，其中引用数据类型需要以基本数据类型为基础构成。</p>
+<blockquote>
+<p>本篇文章只对基本数据类型做一个尽可能全面的简单介绍，至于引用数据类型会在以后的篇幅中逐渐涉及到。</p>
+</blockquote>
+<p>如果要用一个词来概括Java基本数据类型的话，恐怕没有比“四类八种”更合适的了。</p>
+<table>
+<thead>
+<tr>
+<th>四类</th>
+<th>八种</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>整形</td>
+<td>byte(1)、short(2)、int(4)、long(8)</td>
+</tr>
+<tr>
+<td>浮点类型</td>
+<td>float(4)、double(8)</td>
+</tr>
+<tr>
+<td>字符类型</td>
+<td>char(2)</td>
+</tr>
+<tr>
+<td>布尔类型</td>
+<td>boolen(1 bit)</td>
+</tr>
+</tbody></table>
+<p>Java中一共有八种基本数据类型（primitive type），其中有4种整形、2种浮点类型、1种用于表示Unicode编码的字符单元的字符类型char和1种用于表示真值的boolean类型。</p>
+<ol>
+<li><strong>整型</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>整型类型(字节)</th>
+<th>取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte（1）</td>
+<td>-128～127</td>
+</tr>
+<tr>
+<td>short（2）</td>
+<td>-32768～32767</td>
+</tr>
+<tr>
+<td>int（4）</td>
+<td>-2147483648～2147483647（正好超过20亿）</td>
+</tr>
+<tr>
+<td>long（8）</td>
+<td>-9223372036854775808～9223372036854775807</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>说明：<br>1.Java中整型的范围与运行Java代码的机器无关。<br>2.前后缀。<br>3.从Java7开始，可以为数字添加下划线，如：1_000_000<br>4.Java没有任何无符号（unsigned）形式的int、long、shotr和byte类型。</p>
+</blockquote>
+<ol start="2">
+<li><strong>浮点类型</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>浮点型(字节)</th>
+<th>取值范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>float（4）</td>
+<td>大约+-3.40282347E+38F（有效位数为6～7位）</td>
+</tr>
+<tr>
+<td>double（8）</td>
+<td>大约+-1.79769313486231570E+308（有效位数为15位）</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>说明：<br>1.浮点数值不适用于无法接受舍入误差的金融计算中。例如，命令System.out.println(2.0-1.1)将打印出0.8999999999999999，而不是0.9。这种舍入误差的主要原因是浮点数值采用二进制系统表示，而在二进制系统中无法精确地表示分数1/10。这就好像十进制无法精确地表示分数1/3一样。如果在数值计算中不允许有任何舍入误差，就应该使用BigDecimal类。</p>
+</blockquote>
+<ol start="3">
+<li><strong>字符类型</strong></li>
+</ol>
+<p>在Java中，char类型描述了UTF-16编码中的一个代码单元。</p>
+<p>特殊字符的转移序列：</p>
+<table>
+<thead>
+<tr>
+<th>转移序列（名称）</th>
+<th>Unicode值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\b（退格）</td>
+<td>\u0008</td>
+</tr>
+<tr>
+<td>\t（制表）</td>
+<td>\u0009</td>
+</tr>
+<tr>
+<td>\n（换行）</td>
+<td>\u000a</td>
+</tr>
+<tr>
+<td>\r（回车）</td>
+<td>\u000d</td>
+</tr>
+<tr>
+<td>\”（双引号）</td>
+<td>\u0022</td>
+</tr>
+<tr>
+<td>\’（单引号）</td>
+<td>\u0027</td>
+</tr>
+<tr>
+<td>\（反斜杠）</td>
+<td>\u005c</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>说明：<br>1.char类型的字面量值要用单引号括起来。<br>2.Unicode转移序列会在解析代码之前得到处理。<br>3.不建议在程序中使用char类型，除非确实需要处理UTF-16代码单元。最好将字符串作为抽象数据类型处理。</p>
+</blockquote>
+<ol start="4">
+<li><strong>布尔类型</strong></li>
+</ol>
+<p>boolean（布尔）类型有两个值：false和true，用来判定逻辑条件。</p>
+<p>在Java中，整型值和布尔值之间不能相互转换。</p>
+
+          
+            <div class='article_footer'>
+              
+                
   
     
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
     
-    
+
+
 
   
 
-
-                            
-                                
-        </div>
-        <aside class='l_side'>
-  
   
     
     
 
-<section class="widget blogger shadow desktop mobile">
+
+
+  
+
+  
+    
+    
+
+<section class="widget copyright  desktop mobile">
   <div class='content'>
     
-      
-        <a class='avatar flat-box' href='/about/'>
-          <img no-lazy src='http://i2.tiimg.com/721393/e3b3151a832e42ad.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">放开那只大蒜的小站</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
+      <blockquote>
         
           
-            <a href="mailto:582149912@qq.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
+            <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
           
         
           
-            <a href="https://github.com/garlicgo"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
+            <p>写作不易，欢迎打赏</p>
+
           
         
-          
-            <a href="http://music.163.com/playlist?id=4946193794&userid=505375679"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-      </div>
+      </blockquote>
     
   </div>
 </section>
@@ -520,75 +598,234 @@
   
     
     
+
+<section class="widget qrcode  desktop mobile">
   
 
-  <section class="widget category shadow desktop">
+  <div class='content article-entry'>
+    
+      
+        <div class='fancybox'><img src='http://i2.tiimg.com/721393/745b5e3e18ec5602.jpg'
+        
+          height='64px'
+        ></div>
+      
+    
+      
+        <div class='fancybox'><img src='http://i2.tiimg.com/721393/764f1254be9cc6c3.jpg'
+        
+          height='64px'
+        ></div>
+      
+    
+  </div>
+</section>
+
+  
+
+
+              
+            </div>
+          
+        </div>
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-06-18T09:59:11+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年6月18日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Java</p></a></div>
+
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://garlicgo.github.io/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/&title=Java基本数据类型 - 放开那只大蒜的小站&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://garlicgo.github.io/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/&title=Java基本数据类型 - 放开那只大蒜的小站&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=http://garlicgo.github.io/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/&title=Java基本数据类型 - 放开那只大蒜的小站&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+          <div class="prev-next">
+            
+              <a class='prev' href='/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AD%EF%BC%89Java%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F/'>
+                <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Java中的变量常量</p>
+                <p class='content'>
+
+目录
+变量
+常量
+
+1.  变量
+变量声明
+
+在Java中，每个变量都有一个类型（type）。在声明变量时，变量的类型位于变量名之前。
+例如：
+123int age;double money...</p>
+              </a>
+            
+            
+              <a class='next' href='/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89Java(%E9%9B%86%E6%88%90)%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%8E%A8%E8%8D%90/'>
+                <p class='title'>Java开发环境集锦<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+                <p class='content'>
+
+
+目录
+
+概要
+命令行
+文本编辑工具
+集成开发环境
+
+
+由于作者的见识有限（刚刚开始学习Java），所以对于开发环境的整理难免会有遗漏与不合理的地方。对于这些地方，我会在发现的第一时间对文章...</p>
+              </a>
+            
+          </div>
+        
+      </section>
+    </article>
+  
+
+  
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box reveal comments shadow">
+    <section class="article typo">
+      <p ct><i class='fas fa-comments'></i> 评论</p>
+      
+      
+      
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+          </div>
+        </section>
+      
+      
+    </section>
+  </article>
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: 'Java基本数据类型',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+  
+
+  
+    
+    
+
+
+  <section class="widget toc-wrapper shadow desktop mobile">
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" href="/categories/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
-            id="categoriesJavaE5ADA6E4B9A0E7AC94E8AEB0"
-            ><div class='name'>Java学习笔记</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/SSM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" href="/categories/SSM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"
-            id="categoriesSSME5ADA6E4B9A0E7AC94E8AEB0"
-            ><div class='name'>SSM学习笔记</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/SSM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/MyBatis%E7%B3%BB%E7%BB%9F%E6%8B%93%E8%8D%92%E7%AC%94%E8%AE%B0/" href="/categories/SSM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/MyBatis%E7%B3%BB%E7%BB%9F%E6%8B%93%E8%8D%92%E7%AC%94%E8%AE%B0/"
-            id="categoriesSSME5ADA6E4B9A0E7AC94E8AEB0MyBatisE7B3BBE7BB9FE68B93E88D92E7AC94E8AEB0"
-            ><div class='name'>MyBatis系统拓荒笔记</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/SSM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SSM%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/" href="/categories/SSM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SSM%E8%B8%A9%E5%9D%91%E7%AC%94%E8%AE%B0/"
-            id="categoriesSSME5ADA6E4B9A0E7AC94E8AEB0SSME8B8A9E59D91E7AC94E8AEB0"
-            ><div class='name'>SSM踩坑笔记</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#目录"><span class="toc-text">目录</span></a></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/tags/Java/" style="font-size: 24px; color: #555">Java</a> <a href="/tags/MyBatis/" style="font-size: 19px; color: #777">MyBatis</a> <a href="/tags/MySQL/" style="font-size: 14px; color: #999">MySQL</a> <a href="/tags/SSM/" style="font-size: 14px; color: #999">SSM</a> <a href="/tags/VCF/" style="font-size: 14px; color: #999">VCF</a> <a href="/tags/%E5%8E%86%E5%8F%B2/" style="font-size: 14px; color: #999">历史</a> <a href="/tags/%E6%8C%81%E4%B9%85%E5%B1%82/" style="font-size: 14px; color: #999">持久层</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 14px; color: #999">操作系统</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 14px; color: #999">框架</a> <a href="/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" style="font-size: 14px; color: #999">静态博客</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 </aside>
 
-            
+
   
   <footer class="clearfix">
     <br><br>
@@ -663,6 +900,7 @@
   </footer>
 
 <script>setLoadingBarProgress(80);</script>
+
 
       <script>setLoadingBarProgress(60);</script>
     </div>
@@ -776,6 +1014,60 @@
 
 
 
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js"></script>
+
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var meta = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick','mail','link'];
+  var requiredFields = 'nick,mail'.split(',').filter(function(item){
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+  var valine = new Valine();
+  function emoji(path, idx, ext) {
+      return path + "/" + path + "-" + idx + "." + ext;
+  }
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+  valine.init({
+    el: '#valine_container',
+    meta: meta,
+    
+    appId: "mLjDlkMxiPBBSgHFOnwuvE1p-gzGzoHsz",
+    appKey: "Hsh9rraONIgWPy6DkgxJDLUw",
+    placeholder: "快来评论吧~",
+    pageSize:'10',
+    avatar:'robohash',
+    lang:'zh-cn',
+    visitor: 'true',
+    highlight: 'true',
+    mathJax: 'false',
+    enableQQ: 'true',
+    requiredFields: requiredFields,
+    emojiCDN: 'https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/valine/',
+    emojiMaps: emojiMaps
+  })
+  </script>
 
 
 
