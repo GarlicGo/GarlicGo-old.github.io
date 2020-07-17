@@ -1,44 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Bomb后端云的API安全码</title>
-    <url>/z_post/Bomb%E4%BA%91%E7%9A%84API%E5%AE%89%E5%85%A8%E7%A0%81/</url>
-    <content><![CDATA[<p>最近又用了Bomb云，按照文档要求初始化时需要Secret Key和API安全码，因为我已经连续两次忘记API安全码是个什么东西了，所以我决定记录一下。</p>
-<p><img src="https://img-blog.csdnimg.cn/20200619231006987.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="Bomb后端云初始化"></p>
-<a id="more"></a>
-
-<p>首先Secret Key非常好找，打开应用Key就能看见<br><img src="https://img-blog.csdnimg.cn/20200619231157449.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="打开应用key"><br><img src="https://img-blog.csdnimg.cn/20200619231302225.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="应用秘钥"><br>同时我下意识地以为，API安全码也是这其中的一个，但是挨边试过都不对，最后才想到在这个地方：<br><img src="https://img-blog.csdnimg.cn/20200619231407327.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="API安全码"><br>而且文档中专门在代码下面标注了这个位置，我真是太蠢了，以后看文档得仔细一点…</p>
-]]></content>
-      <tags>
-        <tag>Bomb后端云</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo静态博客部署到GitHub访问乱版问题的解决</title>
-    <url>/z_post/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E8%AE%BF%E9%97%AE%E4%B9%B1%E7%89%88%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>今天选了好久Hexo的皮肤，本地预览也没有任何问题，结果部署到GitHub再打开就一下乱版了<br><img src="https://img-blog.csdnimg.cn/20200616133119520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="乱版情况"></p>
-<a id="more"></a>
-
-<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><ol>
-<li><a href="#title1">问题描述</a></li>
-<li><a href="#title2">解决方案</a></li>
-</ol>
-<h5 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a><span id="title1">问题描述：</span></h5><p>下面是对比图：</p>
-<p>本地预览 ↓<br><img src="https://img-blog.csdnimg.cn/20200616133002176.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="本地预览图"><br>部署后的效果 ↓<br><img src="https://img-blog.csdnimg.cn/20200616133119520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="部署后的效果"><br>瞬间心都碎了有没有！</p>
-<h5 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a><span id="title2">解决方案：</span></h5><p>搜来搜去也不知道是怎么回事，突然我想到我访问GitHub也一直有类似的情况（比如图片加载不出来，访问速度缓慢等等），会不会是这个原因导致的。<br>之前我访问GitHub的情况 ↓<br>![GitHub]](<a href="https://img-blog.csdnimg.cn/20200616133318134.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" target="_blank" rel="noopener">https://img-blog.csdnimg.cn/20200616133318134.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70</a>)<br>于是我按照网上的做法修改了host文件，具体操作如下：<br>在系统目录：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\Windows\System32\drivers\etc\hosts</span><br></pre></td></tr></table></figure>
-<p>用编辑器打开此处的host文件，然后在文件最后加上如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#GitHub Start</span><br><span class="line">192.30.253.112 Build software better, together</span><br><span class="line">192.30.253.119 gist.github.com</span><br><span class="line">151.101.184.133 assets-cdn.github.com</span><br><span class="line">151.101.184.133 raw.githubusercontent.com</span><br><span class="line">151.101.184.133 gist.githubusercontent.com</span><br><span class="line">151.101.184.133 cloud.githubusercontent.com</span><br><span class="line">151.101.184.133 camo.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars0.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars1.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars2.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars3.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars4.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars5.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars6.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars7.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars8.githubusercontent.com</span><br><span class="line">#GitHub End</span><br></pre></td></tr></table></figure>
-<p>保存之后，可以发现我的GitHub加载正常了（速度还没测怎么样）↓<br><img src="https://img-blog.csdnimg.cn/20200616133847867.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="GitHub"><br>然后再访问部署在GitHub上的Hexo博客，也恢复正常了↓<br><img src="https://img-blog.csdnimg.cn/20200616133942223.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="Hexo"></p>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>静态博客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java的前世与今生</title>
-    <url>/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89Java%E7%9A%84%E5%89%8D%E4%B8%96%E4%B8%8E%E4%BB%8A%E7%94%9F/</url>
+    <url>/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89Java%E7%9A%84%E5%89%8D%E4%B8%96%E4%B8%8E%E4%BB%8A%E7%94%9F/</url>
     <content><![CDATA[<p>印度尼西亚有一个盛产咖啡的岛屿叫做Java，其中文译名为爪哇，SUN公司的开发人员为他们开发的一种新语言起名为Java，其寓意是“为世人端上一杯热咖啡”……<br><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2374635544,2504122285&fm=26&gp=0.jpg" alt="Java"></p>
 <a id="more"></a>
 
@@ -291,8 +255,44 @@
       </tags>
   </entry>
   <entry>
+    <title>Java开发环境集锦</title>
+    <url>/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89Java(%E9%9B%86%E6%88%90)%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<p><img src="http://pic4.zhimg.com/50/v2-97527aa05b38a3512bc112a2c421c099_bh.jpg" alt="Intellij IDEA"></p>
+<a id="more"></a>
+
+<p><strong>目录</strong></p>
+<ol>
+<li>概要</li>
+<li>命令行</li>
+<li>文本编辑工具</li>
+<li>集成开发环境</li>
+</ol>
+<blockquote>
+<p>由于作者的见识有限（刚刚开始学习Java），所以对于开发环境的整理难免会有遗漏与不合理的地方。对于这些地方，我会在发现的第一时间对文章进行修改、补充，同时十分欢迎各位读者在评论区中留言补充给我。</p>
+</blockquote>
+<p><strong>1.概要</strong><br>《论语》说得好：“工欲善其事，必先利其器。”，选择一个好的开发环境可以极大幅度地提高开发人员的开发效率，因此本篇文章就从命令行、文本编辑工具、集成开发环境三个角度来给大家介绍一些常见的Java开发环境。</p>
+<blockquote>
+<p>要想编译、运行Java程序必须要安装JDK，关于JDK的安装及JDK、JRE和JVM的关系可以参考我的上一篇文章《Java学习笔记（二）Java程序设计环境》。</p>
+<p>注：如果只需要运行Java程序的话安装JRE就可以了，但是JRE只包含Java虚拟机，不包含Java编译器，所以无法将Java源程序文件编译成为Java字节码文件（关于Java编译运行的详细过程会在下一篇文章中介绍），因此JRE并不是Java开发者想要的环境，而是专门为不需要编译器的用户提供，开发者需要安装JDK。</p>
+</blockquote>
+<p><strong>2.命令行</strong><br>命令行直接输入的方式比较适合脚本类的语言，比如python等, 可以直接通过命令行执行一些简单的逻辑。Java语言不支持这种模式，因为Java需要从源码编译为二进制文件，由于这个预编译的机制，所以无法这样实现，这里仅作了解即可。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&gt; 虽然Java不能直接在命令行里面写代码，但是有两条常用的命令提</span><br><span class="line">示符（编译、运行）会在下面的文本编辑工具中用到：</span><br><span class="line"></span><br><span class="line">javac 文件名.java <span class="comment">//命令提示符中的编译操作</span></span><br><span class="line">java 文件名 <span class="comment">//命令提示符中的运行操作</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>3.文本编辑工具</strong><br>文本类的工具在编程中比较常用。现在仍有很多人保持着采用文本编辑工具编程的习惯。</p>
+<p>常用的文本编辑工具有：<br>|名称|特点  |<br>|–|–|<br>|记事本|windows自带|<br>|Notepad++|免费，支持多种语言字符高亮的插件，功能强大，市场占有率较高|<br>|Sublime Text|一个很常用的文本编辑器|<br>|VS Code|市场占有率第一的开发环境，同时不仅仅是一个编辑器，可以自己搭配环境、安装各种插件|<br>|Atom|–|<br>|UltraEdit|–|<br>|jEdit|–|</p>
+<p><strong>4.集成开发环境</strong><br>集成开发环境简称IDE(Integrated Development Environment)。集成了代码编辑、编译、运行、输出、调试、代码自动补全、语法检查等功能。是开发人员开疆拓土的神兵利器。</p>
+<p>常用的集成开发环境有：<br>|名称|特点  |<br>|–|–|<br>|Eclipse|免费、经典的IDE，曾经独领风骚，但是那个时代已经过去了。|<br>|Intelij IDEA|JetBrains公司的核心软件之一，功能强大，成功接过了Eclipse的接力棒，是这个时代的领袖软件之一。Intellij IDEA也为Google的安卓开发平台Android Studio提供了技术支持。|<br>|Android Studio|安卓开发平台，由Intellij IDEA提供技术支持，完全支持Java语言，学习的同时还可以顺便学习Android开发，一举两得。（但是说实话并不建议使用Android Studio来学习Java语言，在此只是提一下Android Studio上可以跑Java）|<br>|VS Code Java|北京时间 2019 年 6 月 14 日 ，微软发布了 VS Code Java 安装程序，方便开发者能一键安装所有 Java 开发环境。|<br>|NetBeans|–|<br>|BlueJ|–|<br>|DrJava|DrJava IDE具有互动友好的界面，其测试，调试和智能编辑功能都旨在为新手创建一个轻巧的IDE，对学生来说也许是个不错的选择。|<br>|JCreator|JCreator IDE仅限于Windows，作为本地平台，易于安装和启动。在新用户中间颇受欢迎。</p>
+]]></content>
+      <categories>
+        <category>Java学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java程序设计环境（JDK）</title>
-    <url>/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%8E%AF%E5%A2%83%EF%BC%88JDK%EF%BC%89/</url>
+    <url>/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%8E%AF%E5%A2%83%EF%BC%88JDK%EF%BC%89/</url>
     <content><![CDATA[<p><img src="http://img2.imgtn.bdimg.com/it/u=3289273105,3212148743&fm=26&gp=0.jpg" alt="Oracle JDK 1.8"></p>
 <a id="more"></a>
 
@@ -354,127 +354,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Java开发环境集锦</title>
-    <url>/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89Java(%E9%9B%86%E6%88%90)%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<p><img src="http://pic4.zhimg.com/50/v2-97527aa05b38a3512bc112a2c421c099_bh.jpg" alt="Intellij IDEA"></p>
-<a id="more"></a>
-
-<p><strong>目录</strong></p>
-<ol>
-<li>概要</li>
-<li>命令行</li>
-<li>文本编辑工具</li>
-<li>集成开发环境</li>
-</ol>
-<blockquote>
-<p>由于作者的见识有限（刚刚开始学习Java），所以对于开发环境的整理难免会有遗漏与不合理的地方。对于这些地方，我会在发现的第一时间对文章进行修改、补充，同时十分欢迎各位读者在评论区中留言补充给我。</p>
-</blockquote>
-<p><strong>1.概要</strong><br>《论语》说得好：“工欲善其事，必先利其器。”，选择一个好的开发环境可以极大幅度地提高开发人员的开发效率，因此本篇文章就从命令行、文本编辑工具、集成开发环境三个角度来给大家介绍一些常见的Java开发环境。</p>
-<blockquote>
-<p>要想编译、运行Java程序必须要安装JDK，关于JDK的安装及JDK、JRE和JVM的关系可以参考我的上一篇文章《Java学习笔记（二）Java程序设计环境》。</p>
-<p>注：如果只需要运行Java程序的话安装JRE就可以了，但是JRE只包含Java虚拟机，不包含Java编译器，所以无法将Java源程序文件编译成为Java字节码文件（关于Java编译运行的详细过程会在下一篇文章中介绍），因此JRE并不是Java开发者想要的环境，而是专门为不需要编译器的用户提供，开发者需要安装JDK。</p>
-</blockquote>
-<p><strong>2.命令行</strong><br>命令行直接输入的方式比较适合脚本类的语言，比如python等, 可以直接通过命令行执行一些简单的逻辑。Java语言不支持这种模式，因为Java需要从源码编译为二进制文件，由于这个预编译的机制，所以无法这样实现，这里仅作了解即可。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&gt; 虽然Java不能直接在命令行里面写代码，但是有两条常用的命令提</span><br><span class="line">示符（编译、运行）会在下面的文本编辑工具中用到：</span><br><span class="line"></span><br><span class="line">javac 文件名.java <span class="comment">//命令提示符中的编译操作</span></span><br><span class="line">java 文件名 <span class="comment">//命令提示符中的运行操作</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>3.文本编辑工具</strong><br>文本类的工具在编程中比较常用。现在仍有很多人保持着采用文本编辑工具编程的习惯。</p>
-<p>常用的文本编辑工具有：<br>|名称|特点  |<br>|–|–|<br>|记事本|windows自带|<br>|Notepad++|免费，支持多种语言字符高亮的插件，功能强大，市场占有率较高|<br>|Sublime Text|一个很常用的文本编辑器|<br>|VS Code|市场占有率第一的开发环境，同时不仅仅是一个编辑器，可以自己搭配环境、安装各种插件|<br>|Atom|–|<br>|UltraEdit|–|<br>|jEdit|–|</p>
-<p><strong>4.集成开发环境</strong><br>集成开发环境简称IDE(Integrated Development Environment)。集成了代码编辑、编译、运行、输出、调试、代码自动补全、语法检查等功能。是开发人员开疆拓土的神兵利器。</p>
-<p>常用的集成开发环境有：<br>|名称|特点  |<br>|–|–|<br>|Eclipse|免费、经典的IDE，曾经独领风骚，但是那个时代已经过去了。|<br>|Intelij IDEA|JetBrains公司的核心软件之一，功能强大，成功接过了Eclipse的接力棒，是这个时代的领袖软件之一。Intellij IDEA也为Google的安卓开发平台Android Studio提供了技术支持。|<br>|Android Studio|安卓开发平台，由Intellij IDEA提供技术支持，完全支持Java语言，学习的同时还可以顺便学习Android开发，一举两得。（但是说实话并不建议使用Android Studio来学习Java语言，在此只是提一下Android Studio上可以跑Java）|<br>|VS Code Java|北京时间 2019 年 6 月 14 日 ，微软发布了 VS Code Java 安装程序，方便开发者能一键安装所有 Java 开发环境。|<br>|NetBeans|–|<br>|BlueJ|–|<br>|DrJava|DrJava IDE具有互动友好的界面，其测试，调试和智能编辑功能都旨在为新手创建一个轻巧的IDE，对学生来说也许是个不错的选择。|<br>|JCreator|JCreator IDE仅限于Windows，作为本地平台，易于安装和启动。在新用户中间颇受欢迎。</p>
-]]></content>
-      <categories>
-        <category>Java学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MyBatis部署环境时关于时区的一个小坑</title>
-    <url>/z_post/MyBatis%E9%83%A8%E7%BD%B2%E7%8E%AF%E5%A2%83%E6%97%B6%E5%85%B3%E4%BA%8E%E6%97%B6%E5%8C%BA%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8F%E5%9D%91/</url>
-    <content><![CDATA[<p>今天配置MyBatis环境时遇到了一个关于MySQL时区设置的情况，配置好环境之后运行报了下面这种异常：<br><img src="https://img-blog.csdnimg.cn/20200617233044369.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="报错信息截图"></p>
-<a id="more"></a>
-
-<p>报错信息：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Exception in thread <span class="string">"main"</span> org.apache.ibatis.exceptions.PersistenceException: </span><br><span class="line">### Error querying database.  Cause: java.sql.SQLException: The server time zone value '?й???????' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the 'serverTimezone' configuration property) to use a more specifc time zone value if you want to utilize time zone support.</span><br><span class="line">### The error may exist in com/garlicgo/dao/IUserDao.xml</span><br><span class="line">### The error may involve com.garlicgo.dao.IUserDao.findAll</span><br><span class="line">### The error occurred while executing a query</span><br><span class="line">### Cause: java.sql.SQLException: The server time zone value '?й???????' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the 'serverTimezone' configuration property) to use a more specifc time zone value if you want to utilize time zone support.</span><br><span class="line">	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:<span class="number">30</span>)</span><br><span class="line">	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:<span class="number">149</span>)</span><br><span class="line">	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:<span class="number">140</span>)</span><br><span class="line">	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:<span class="number">147</span>)</span><br><span class="line">	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:<span class="number">80</span>)</span><br><span class="line">	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:<span class="number">144</span>)</span><br><span class="line">	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:<span class="number">85</span>)</span><br><span class="line">	at com.sun.proxy.$Proxy2.findAll(Unknown Source)</span><br><span class="line">	at com.garlicgo.test.MybatisTest.main(MybatisTest.java:<span class="number">38</span>)</span><br><span class="line">Caused by: java.sql.SQLException: The server time zone value <span class="string">'?й???????'</span> is unrecognized or represents more than one time zone. <span class="function">You must configure either the server or JDBC <span class="title">driver</span> <span class="params">(via the <span class="string">'serverTimezone'</span> configuration property)</span> to use a more specifc time zone value <span class="keyword">if</span> you want to utilize time zone support.</span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.exceptions.SQLError.<span class="title">createSQLException</span><span class="params">(SQLError.java:<span class="number">129</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.exceptions.SQLError.<span class="title">createSQLException</span><span class="params">(SQLError.java:<span class="number">97</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.exceptions.SQLError.<span class="title">createSQLException</span><span class="params">(SQLError.java:<span class="number">89</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.exceptions.SQLError.<span class="title">createSQLException</span><span class="params">(SQLError.java:<span class="number">63</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.exceptions.SQLError.<span class="title">createSQLException</span><span class="params">(SQLError.java:<span class="number">73</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.<span class="title">translateException</span><span class="params">(SQLExceptionsMapping.java:<span class="number">76</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.ConnectionImpl.<span class="title">createNewIO</span><span class="params">(ConnectionImpl.java:<span class="number">836</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;<span class="params">(ConnectionImpl.java:<span class="number">456</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.ConnectionImpl.<span class="title">getInstance</span><span class="params">(ConnectionImpl.java:<span class="number">246</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.NonRegisteringDriver.<span class="title">connect</span><span class="params">(NonRegisteringDriver.java:<span class="number">197</span>)</span></span></span><br><span class="line"><span class="function">	at java.sql/java.sql.DriverManager.<span class="title">getConnection</span><span class="params">(DriverManager.java:<span class="number">677</span>)</span></span></span><br><span class="line"><span class="function">	at java.sql/java.sql.DriverManager.<span class="title">getConnection</span><span class="params">(DriverManager.java:<span class="number">189</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.<span class="title">doGetConnection</span><span class="params">(UnpooledDataSource.java:<span class="number">221</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.<span class="title">doGetConnection</span><span class="params">(UnpooledDataSource.java:<span class="number">216</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.<span class="title">getConnection</span><span class="params">(UnpooledDataSource.java:<span class="number">95</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.datasource.pooled.PooledDataSource.<span class="title">popConnection</span><span class="params">(PooledDataSource.java:<span class="number">422</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.datasource.pooled.PooledDataSource.<span class="title">getConnection</span><span class="params">(PooledDataSource.java:<span class="number">89</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.<span class="title">openConnection</span><span class="params">(JdbcTransaction.java:<span class="number">138</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.<span class="title">getConnection</span><span class="params">(JdbcTransaction.java:<span class="number">60</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.executor.BaseExecutor.<span class="title">getConnection</span><span class="params">(BaseExecutor.java:<span class="number">336</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.executor.SimpleExecutor.<span class="title">prepareStatement</span><span class="params">(SimpleExecutor.java:<span class="number">86</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.executor.SimpleExecutor.<span class="title">doQuery</span><span class="params">(SimpleExecutor.java:<span class="number">62</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.executor.BaseExecutor.<span class="title">queryFromDatabase</span><span class="params">(BaseExecutor.java:<span class="number">324</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.executor.BaseExecutor.<span class="title">query</span><span class="params">(BaseExecutor.java:<span class="number">156</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.executor.CachingExecutor.<span class="title">query</span><span class="params">(CachingExecutor.java:<span class="number">109</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.executor.CachingExecutor.<span class="title">query</span><span class="params">(CachingExecutor.java:<span class="number">83</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.session.defaults.DefaultSqlSession.<span class="title">selectList</span><span class="params">(DefaultSqlSession.java:<span class="number">147</span>)</span></span></span><br><span class="line"><span class="function">	... 7 more</span></span><br><span class="line"><span class="function">Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The server time zone value '?й???????' is unrecognized or represents more than one time zone. You must configure either the server or JDBC <span class="title">driver</span> <span class="params">(via the <span class="string">'serverTimezone'</span> configuration property)</span> to use a more specifc time zone value <span class="keyword">if</span> you want to utilize time zone support.</span></span><br><span class="line"><span class="function">	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.<span class="title">newInstance0</span><span class="params">(Native Method)</span></span></span><br><span class="line"><span class="function">	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.<span class="title">newInstance</span><span class="params">(NativeConstructorAccessorImpl.java:<span class="number">62</span>)</span></span></span><br><span class="line"><span class="function">	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.<span class="title">newInstance</span><span class="params">(DelegatingConstructorAccessorImpl.java:<span class="number">45</span>)</span></span></span><br><span class="line"><span class="function">	at java.base/java.lang.reflect.Constructor.<span class="title">newInstanceWithCaller</span><span class="params">(Constructor.java:<span class="number">500</span>)</span></span></span><br><span class="line"><span class="function">	at java.base/java.lang.reflect.Constructor.<span class="title">newInstance</span><span class="params">(Constructor.java:<span class="number">481</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.exceptions.ExceptionFactory.<span class="title">createException</span><span class="params">(ExceptionFactory.java:<span class="number">61</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.exceptions.ExceptionFactory.<span class="title">createException</span><span class="params">(ExceptionFactory.java:<span class="number">85</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.util.TimeUtil.<span class="title">getCanonicalTimezone</span><span class="params">(TimeUtil.java:<span class="number">132</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.protocol.a.NativeProtocol.<span class="title">configureTimezone</span><span class="params">(NativeProtocol.java:<span class="number">2118</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.protocol.a.NativeProtocol.<span class="title">initServerSession</span><span class="params">(NativeProtocol.java:<span class="number">2142</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.ConnectionImpl.<span class="title">initializePropsFromServer</span><span class="params">(ConnectionImpl.java:<span class="number">1310</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.ConnectionImpl.<span class="title">connectOneTryOnly</span><span class="params">(ConnectionImpl.java:<span class="number">967</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.ConnectionImpl.<span class="title">createNewIO</span><span class="params">(ConnectionImpl.java:<span class="number">826</span>)</span></span></span><br><span class="line"><span class="function">	... 27 more</span></span><br></pre></td></tr></table></figure>
-<p>这个就是需要设置一下时区，在主配置文件中数据库连接的URL后面加上 <code>serverTimezone=GMT</code> 就OK了。注意我这里没有加问号，但是下面截图中有一个问号，不明白的小伙伴只需要保证URL后面有且仅有一个问号就可以了。<br><img src="https://img-blog.csdnimg.cn/20200617233356268.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="配置信息"></p>
-]]></content>
-      <categories>
-        <category>SSM学习笔记</category>
-        <category>SSM踩坑笔记</category>
-      </categories>
-      <tags>
-        <tag>MyBatis</tag>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java中的变量常量</title>
-    <url>/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AD%EF%BC%89Java%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F/</url>
-    <content><![CDATA[<p><img src="http://seo-1255598498.file.myqcloud.com/full/a58e4c08f3703869491f1d9f793b7c4f82a8ea6f.jpg" alt="Java中的变量常量"></p>
-<a id="more"></a>
-<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><ol>
-<li>变量</li>
-<li>常量</li>
-</ol>
-<h5 id="1-变量"><a href="#1-变量" class="headerlink" title="1.  变量"></a>1.  变量</h5><ol>
-<li>变量声明</li>
-</ol>
-<p>在Java中，每个变量都有一个类型（type）。在声明变量时，变量的类型位于变量名之前。</p>
-<p>例如：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> age;</span><br><span class="line"><span class="keyword">double</span> money;</span><br><span class="line"><span class="keyword">boolean</span> male;</span><br></pre></td></tr></table></figure>
-<p>由于声明是一条完整的Java语句，所以每个声明必须以分号结束。</p>
-<p>Java变量命名规则：<br>|序号|内容|<br>|–|–|<br>|1|变量名必须是一个以字母开头并由字母或数字构成的序列。|<br>|2|‘+’和‘©️’这样的符号不能出现在变量名中，空格也不行，并且不能使用关键字。|<br>|3|变量名中所有的字符都是有意义的，并且大小写敏感。|<br>|4|变量名的长度基本是没有限制。|</p>
-<blockquote>
-<p>Java变量命名规则的补充解释：<br>对于上述表格中的第1条规则需要注意，与大多数程序设计语言相比，Java中“字母”和“数字”的范围更大。字母包括‘A’～‘Z’、‘a’～‘z’、‘_’、‘$’或在某种语言中表示字母的任何Unicode字符。同样，数字包括‘0’～‘9’和在某种语言中表示数字的任何Unicode字符。</p>
-</blockquote>
-<blockquote>
-<p>提示：<br>1.如果想知道哪些Unicode字符属于Java中的“字母”，可以使用Character类的isJavaIdentifierStart和isJavaIdentifierPart方法来检查。<br>2.尽管$是一个合法的Java字符，但不要在自己的代码中使用这个字符。它只用在Java编译器或其他工具生成的名字中。<br>3.不提倡在一行中声明多个变量。逐一声明每一个变量可以提高程序的可读性。<br>4.在对变量命名时使用小驼峰命名法，同时在对两个不同变量进行命名时，最好不要只存在大小写上的差异。</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//不推荐下面这种声明变量发方式</span></span><br><span class="line"><span class="keyword">int</span> a,b;</span><br><span class="line"><span class="comment">//推荐下面这种声明变量的方式</span></span><br><span class="line"><span class="keyword">int</span> a;</span><br><span class="line"><span class="keyword">int</span> b;</span><br><span class="line"></span><br><span class="line"><span class="comment">//不推荐下面这种命名方式</span></span><br><span class="line"><span class="keyword">int</span> sonBirthday;<span class="keyword">int</span> sonbirthday;</span><br><span class="line"><span class="comment">//推荐下面这种命名方式</span></span><br><span class="line"><span class="keyword">int</span> firstSonBirthday;<span class="keyword">int</span> secondSonbirthday;</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>变量初始化</li>
-</ol>
-<p>声明一个变量之后，必须用赋值语句对变量进行显式初始化，千万不要使用未初始化的变量（编译器会报错）。</p>
-<p>想要对一个已经声明过的变量进行赋值，就需要将变量名放在等号（=）左侧，相应取值的Java表达式放在等号的右侧：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> number;</span><br><span class="line">number = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
-<p>也可以将变量的声明和初始化放在同一行中，例如：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> student = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>在Java中，变量的声明尽可能地靠近变量第一次使用的地方，这是一种良好的程序编写风格。</p>
-</blockquote>
-<h5 id="2-常量"><a href="#2-常量" class="headerlink" title="2. 常量"></a>2. 常量</h5><table>
-<thead>
-<tr>
-<th>名称</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>常量关键字</td>
-<td>final，在Java中，利用关键字final指示常量。关键字final表示这个变量只能被赋值一次，一旦被赋值之后，就不能够再更改了。习惯上，常量名使用全大写。</td>
-</tr>
-<tr>
-<td>类常量</td>
-<td>static final，希望某个常量在一个类的多个方法中使用。</td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>const是Java保留的关键字，但目前并没有使用。在Java中，必须使用final定义常量。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Java学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Java基本数据类型</title>
-    <url>/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
+    <url>/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
     <content><![CDATA[<p><img src="http://09imgmini.eastday.com/mobile/20181212/20181212223811_986eb6c59a1e0932e9585d2117746faa_1.jpeg" alt="Java基本数据类型"></p>
 <a id="more"></a>
 
@@ -624,8 +505,91 @@
       </tags>
   </entry>
   <entry>
+    <title>Java中的变量常量</title>
+    <url>/z_post/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AD%EF%BC%89Java%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E5%B8%B8%E9%87%8F/</url>
+    <content><![CDATA[<p><img src="http://seo-1255598498.file.myqcloud.com/full/a58e4c08f3703869491f1d9f793b7c4f82a8ea6f.jpg" alt="Java中的变量常量"></p>
+<a id="more"></a>
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><ol>
+<li>变量</li>
+<li>常量</li>
+</ol>
+<h5 id="1-变量"><a href="#1-变量" class="headerlink" title="1.  变量"></a>1.  变量</h5><ol>
+<li>变量声明</li>
+</ol>
+<p>在Java中，每个变量都有一个类型（type）。在声明变量时，变量的类型位于变量名之前。</p>
+<p>例如：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> age;</span><br><span class="line"><span class="keyword">double</span> money;</span><br><span class="line"><span class="keyword">boolean</span> male;</span><br></pre></td></tr></table></figure>
+<p>由于声明是一条完整的Java语句，所以每个声明必须以分号结束。</p>
+<p>Java变量命名规则：<br>|序号|内容|<br>|–|–|<br>|1|变量名必须是一个以字母开头并由字母或数字构成的序列。|<br>|2|‘+’和‘©️’这样的符号不能出现在变量名中，空格也不行，并且不能使用关键字。|<br>|3|变量名中所有的字符都是有意义的，并且大小写敏感。|<br>|4|变量名的长度基本是没有限制。|</p>
+<blockquote>
+<p>Java变量命名规则的补充解释：<br>对于上述表格中的第1条规则需要注意，与大多数程序设计语言相比，Java中“字母”和“数字”的范围更大。字母包括‘A’～‘Z’、‘a’～‘z’、‘_’、‘$’或在某种语言中表示字母的任何Unicode字符。同样，数字包括‘0’～‘9’和在某种语言中表示数字的任何Unicode字符。</p>
+</blockquote>
+<blockquote>
+<p>提示：<br>1.如果想知道哪些Unicode字符属于Java中的“字母”，可以使用Character类的isJavaIdentifierStart和isJavaIdentifierPart方法来检查。<br>2.尽管$是一个合法的Java字符，但不要在自己的代码中使用这个字符。它只用在Java编译器或其他工具生成的名字中。<br>3.不提倡在一行中声明多个变量。逐一声明每一个变量可以提高程序的可读性。<br>4.在对变量命名时使用小驼峰命名法，同时在对两个不同变量进行命名时，最好不要只存在大小写上的差异。</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//不推荐下面这种声明变量发方式</span></span><br><span class="line"><span class="keyword">int</span> a,b;</span><br><span class="line"><span class="comment">//推荐下面这种声明变量的方式</span></span><br><span class="line"><span class="keyword">int</span> a;</span><br><span class="line"><span class="keyword">int</span> b;</span><br><span class="line"></span><br><span class="line"><span class="comment">//不推荐下面这种命名方式</span></span><br><span class="line"><span class="keyword">int</span> sonBirthday;<span class="keyword">int</span> sonbirthday;</span><br><span class="line"><span class="comment">//推荐下面这种命名方式</span></span><br><span class="line"><span class="keyword">int</span> firstSonBirthday;<span class="keyword">int</span> secondSonbirthday;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>变量初始化</li>
+</ol>
+<p>声明一个变量之后，必须用赋值语句对变量进行显式初始化，千万不要使用未初始化的变量（编译器会报错）。</p>
+<p>想要对一个已经声明过的变量进行赋值，就需要将变量名放在等号（=）左侧，相应取值的Java表达式放在等号的右侧：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> number;</span><br><span class="line">number = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+<p>也可以将变量的声明和初始化放在同一行中，例如：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> student = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>在Java中，变量的声明尽可能地靠近变量第一次使用的地方，这是一种良好的程序编写风格。</p>
+</blockquote>
+<h5 id="2-常量"><a href="#2-常量" class="headerlink" title="2. 常量"></a>2. 常量</h5><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>常量关键字</td>
+<td>final，在Java中，利用关键字final指示常量。关键字final表示这个变量只能被赋值一次，一旦被赋值之后，就不能够再更改了。习惯上，常量名使用全大写。</td>
+</tr>
+<tr>
+<td>类常量</td>
+<td>static final，希望某个常量在一个类的多个方法中使用。</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>const是Java保留的关键字，但目前并没有使用。在Java中，必须使用final定义常量。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Java学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MyBatis部署环境时关于时区的一个小坑</title>
+    <url>/z_post/SSM/Mybatis/MyBatis%E9%83%A8%E7%BD%B2%E7%8E%AF%E5%A2%83%E6%97%B6%E5%85%B3%E4%BA%8E%E6%97%B6%E5%8C%BA%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8F%E5%9D%91/</url>
+    <content><![CDATA[<p>今天配置MyBatis环境时遇到了一个关于MySQL时区设置的情况，配置好环境之后运行报了下面这种异常：<br><img src="https://img-blog.csdnimg.cn/20200617233044369.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="报错信息截图"></p>
+<a id="more"></a>
+
+<p>报错信息：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Exception in thread <span class="string">"main"</span> org.apache.ibatis.exceptions.PersistenceException: </span><br><span class="line">### Error querying database.  Cause: java.sql.SQLException: The server time zone value '?й???????' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the 'serverTimezone' configuration property) to use a more specifc time zone value if you want to utilize time zone support.</span><br><span class="line">### The error may exist in com/garlicgo/dao/IUserDao.xml</span><br><span class="line">### The error may involve com.garlicgo.dao.IUserDao.findAll</span><br><span class="line">### The error occurred while executing a query</span><br><span class="line">### Cause: java.sql.SQLException: The server time zone value '?й???????' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the 'serverTimezone' configuration property) to use a more specifc time zone value if you want to utilize time zone support.</span><br><span class="line">	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:<span class="number">30</span>)</span><br><span class="line">	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:<span class="number">149</span>)</span><br><span class="line">	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:<span class="number">140</span>)</span><br><span class="line">	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:<span class="number">147</span>)</span><br><span class="line">	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:<span class="number">80</span>)</span><br><span class="line">	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:<span class="number">144</span>)</span><br><span class="line">	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:<span class="number">85</span>)</span><br><span class="line">	at com.sun.proxy.$Proxy2.findAll(Unknown Source)</span><br><span class="line">	at com.garlicgo.test.MybatisTest.main(MybatisTest.java:<span class="number">38</span>)</span><br><span class="line">Caused by: java.sql.SQLException: The server time zone value <span class="string">'?й???????'</span> is unrecognized or represents more than one time zone. <span class="function">You must configure either the server or JDBC <span class="title">driver</span> <span class="params">(via the <span class="string">'serverTimezone'</span> configuration property)</span> to use a more specifc time zone value <span class="keyword">if</span> you want to utilize time zone support.</span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.exceptions.SQLError.<span class="title">createSQLException</span><span class="params">(SQLError.java:<span class="number">129</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.exceptions.SQLError.<span class="title">createSQLException</span><span class="params">(SQLError.java:<span class="number">97</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.exceptions.SQLError.<span class="title">createSQLException</span><span class="params">(SQLError.java:<span class="number">89</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.exceptions.SQLError.<span class="title">createSQLException</span><span class="params">(SQLError.java:<span class="number">63</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.exceptions.SQLError.<span class="title">createSQLException</span><span class="params">(SQLError.java:<span class="number">73</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.<span class="title">translateException</span><span class="params">(SQLExceptionsMapping.java:<span class="number">76</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.ConnectionImpl.<span class="title">createNewIO</span><span class="params">(ConnectionImpl.java:<span class="number">836</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;<span class="params">(ConnectionImpl.java:<span class="number">456</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.ConnectionImpl.<span class="title">getInstance</span><span class="params">(ConnectionImpl.java:<span class="number">246</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.NonRegisteringDriver.<span class="title">connect</span><span class="params">(NonRegisteringDriver.java:<span class="number">197</span>)</span></span></span><br><span class="line"><span class="function">	at java.sql/java.sql.DriverManager.<span class="title">getConnection</span><span class="params">(DriverManager.java:<span class="number">677</span>)</span></span></span><br><span class="line"><span class="function">	at java.sql/java.sql.DriverManager.<span class="title">getConnection</span><span class="params">(DriverManager.java:<span class="number">189</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.<span class="title">doGetConnection</span><span class="params">(UnpooledDataSource.java:<span class="number">221</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.<span class="title">doGetConnection</span><span class="params">(UnpooledDataSource.java:<span class="number">216</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.<span class="title">getConnection</span><span class="params">(UnpooledDataSource.java:<span class="number">95</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.datasource.pooled.PooledDataSource.<span class="title">popConnection</span><span class="params">(PooledDataSource.java:<span class="number">422</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.datasource.pooled.PooledDataSource.<span class="title">getConnection</span><span class="params">(PooledDataSource.java:<span class="number">89</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.<span class="title">openConnection</span><span class="params">(JdbcTransaction.java:<span class="number">138</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.<span class="title">getConnection</span><span class="params">(JdbcTransaction.java:<span class="number">60</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.executor.BaseExecutor.<span class="title">getConnection</span><span class="params">(BaseExecutor.java:<span class="number">336</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.executor.SimpleExecutor.<span class="title">prepareStatement</span><span class="params">(SimpleExecutor.java:<span class="number">86</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.executor.SimpleExecutor.<span class="title">doQuery</span><span class="params">(SimpleExecutor.java:<span class="number">62</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.executor.BaseExecutor.<span class="title">queryFromDatabase</span><span class="params">(BaseExecutor.java:<span class="number">324</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.executor.BaseExecutor.<span class="title">query</span><span class="params">(BaseExecutor.java:<span class="number">156</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.executor.CachingExecutor.<span class="title">query</span><span class="params">(CachingExecutor.java:<span class="number">109</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.executor.CachingExecutor.<span class="title">query</span><span class="params">(CachingExecutor.java:<span class="number">83</span>)</span></span></span><br><span class="line"><span class="function">	at org.apache.ibatis.session.defaults.DefaultSqlSession.<span class="title">selectList</span><span class="params">(DefaultSqlSession.java:<span class="number">147</span>)</span></span></span><br><span class="line"><span class="function">	... 7 more</span></span><br><span class="line"><span class="function">Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The server time zone value '?й???????' is unrecognized or represents more than one time zone. You must configure either the server or JDBC <span class="title">driver</span> <span class="params">(via the <span class="string">'serverTimezone'</span> configuration property)</span> to use a more specifc time zone value <span class="keyword">if</span> you want to utilize time zone support.</span></span><br><span class="line"><span class="function">	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.<span class="title">newInstance0</span><span class="params">(Native Method)</span></span></span><br><span class="line"><span class="function">	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.<span class="title">newInstance</span><span class="params">(NativeConstructorAccessorImpl.java:<span class="number">62</span>)</span></span></span><br><span class="line"><span class="function">	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.<span class="title">newInstance</span><span class="params">(DelegatingConstructorAccessorImpl.java:<span class="number">45</span>)</span></span></span><br><span class="line"><span class="function">	at java.base/java.lang.reflect.Constructor.<span class="title">newInstanceWithCaller</span><span class="params">(Constructor.java:<span class="number">500</span>)</span></span></span><br><span class="line"><span class="function">	at java.base/java.lang.reflect.Constructor.<span class="title">newInstance</span><span class="params">(Constructor.java:<span class="number">481</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.exceptions.ExceptionFactory.<span class="title">createException</span><span class="params">(ExceptionFactory.java:<span class="number">61</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.exceptions.ExceptionFactory.<span class="title">createException</span><span class="params">(ExceptionFactory.java:<span class="number">85</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.util.TimeUtil.<span class="title">getCanonicalTimezone</span><span class="params">(TimeUtil.java:<span class="number">132</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.protocol.a.NativeProtocol.<span class="title">configureTimezone</span><span class="params">(NativeProtocol.java:<span class="number">2118</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.protocol.a.NativeProtocol.<span class="title">initServerSession</span><span class="params">(NativeProtocol.java:<span class="number">2142</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.ConnectionImpl.<span class="title">initializePropsFromServer</span><span class="params">(ConnectionImpl.java:<span class="number">1310</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.ConnectionImpl.<span class="title">connectOneTryOnly</span><span class="params">(ConnectionImpl.java:<span class="number">967</span>)</span></span></span><br><span class="line"><span class="function">	at com.mysql.cj.jdbc.ConnectionImpl.<span class="title">createNewIO</span><span class="params">(ConnectionImpl.java:<span class="number">826</span>)</span></span></span><br><span class="line"><span class="function">	... 27 more</span></span><br></pre></td></tr></table></figure>
+<p>这个就是需要设置一下时区，在主配置文件中数据库连接的URL后面加上 <code>serverTimezone=GMT</code> 就OK了。注意我这里没有加问号，但是下面截图中有一个问号，不明白的小伙伴只需要保证URL后面有且仅有一个问号就可以了。<br><img src="https://img-blog.csdnimg.cn/20200617233356268.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="配置信息"></p>
+]]></content>
+      <categories>
+        <category>SSM学习笔记</category>
+        <category>SSM踩坑笔记</category>
+      </categories>
+      <tags>
+        <tag>MyBatis</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【MyBatis系统拓荒笔记-1】MyBatis入门之混沌初开</title>
-    <url>/z_post/%E3%80%90MyBatis%E7%B3%BB%E7%BB%9F%E6%8B%93%E8%8D%92%E7%AC%94%E8%AE%B0%20-%201%E3%80%91MyBatis%E5%85%A5%E9%97%A8%E4%B9%8B%E6%B7%B7%E6%B2%8C%E5%88%9D%E5%BC%80/</url>
+    <url>/z_post/SSM/Mybatis/%E3%80%90MyBatis%E7%B3%BB%E7%BB%9F%E6%8B%93%E8%8D%92%E7%AC%94%E8%AE%B0%20-%201%E3%80%91MyBatis%E5%85%A5%E9%97%A8%E4%B9%8B%E6%B7%B7%E6%B2%8C%E5%88%9D%E5%BC%80/</url>
     <content><![CDATA[<p>MyBatis是一款用Java编写的优秀的持久层框架，封装了JDBC 操作的很多细节，同时使用了ORM思想实现了结果集的封装，几乎避免了所有的 JDBC 代码、手动设置参数以及获取结果集，使开发者只需要关注sql语句本身，而无需关注注册驱动，创建连接等繁杂过程。</p>
 <p><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1150253057,2576481104&fm=11&gp=0.jpg" alt="MyBatis"></p>
 <a id="more"></a>
@@ -727,8 +691,116 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo常用指令</title>
+    <url>/z_post/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Hexo/Hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<p>好久没有写博客了，Hexo的指令也忘得差不多了，这篇博客就简单回顾一下Hexo的常用指令吧。</p>
+<a id="more"></a>
+
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4>]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>静态博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo静态博客部署到GitHub访问乱版问题的解决</title>
+    <url>/z_post/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Hexo/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E8%AE%BF%E9%97%AE%E4%B9%B1%E7%89%88%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>今天选了好久Hexo的皮肤，本地预览也没有任何问题，结果部署到GitHub再打开就一下乱版了<br><img src="https://img-blog.csdnimg.cn/20200616133119520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="乱版情况"></p>
+<a id="more"></a>
+
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><ol>
+<li><a href="#title1">问题描述</a></li>
+<li><a href="#title2">解决方案</a></li>
+</ol>
+<h5 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a><span id="title1">问题描述：</span></h5><p>下面是对比图：</p>
+<p>本地预览 ↓<br><img src="https://img-blog.csdnimg.cn/20200616133002176.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="本地预览图"><br>部署后的效果 ↓<br><img src="https://img-blog.csdnimg.cn/20200616133119520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="部署后的效果"><br>瞬间心都碎了有没有！</p>
+<h5 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a><span id="title2">解决方案：</span></h5><p>搜来搜去也不知道是怎么回事，突然我想到我访问GitHub也一直有类似的情况（比如图片加载不出来，访问速度缓慢等等），会不会是这个原因导致的。<br>之前我访问GitHub的情况 ↓<br>![GitHub]](<a href="https://img-blog.csdnimg.cn/20200616133318134.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" target="_blank" rel="noopener">https://img-blog.csdnimg.cn/20200616133318134.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70</a>)<br>于是我按照网上的做法修改了host文件，具体操作如下：<br>在系统目录：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">C:\Windows\System32\drivers\etc\hosts</span><br></pre></td></tr></table></figure>
+<p>用编辑器打开此处的host文件，然后在文件最后加上如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#GitHub Start</span><br><span class="line">192.30.253.112 Build software better, together</span><br><span class="line">192.30.253.119 gist.github.com</span><br><span class="line">151.101.184.133 assets-cdn.github.com</span><br><span class="line">151.101.184.133 raw.githubusercontent.com</span><br><span class="line">151.101.184.133 gist.githubusercontent.com</span><br><span class="line">151.101.184.133 cloud.githubusercontent.com</span><br><span class="line">151.101.184.133 camo.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars0.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars1.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars2.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars3.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars4.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars5.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars6.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars7.githubusercontent.com</span><br><span class="line">151.101.184.133 avatars8.githubusercontent.com</span><br><span class="line">#GitHub End</span><br></pre></td></tr></table></figure>
+<p>保存之后，可以发现我的GitHub加载正常了（速度还没测怎么样）↓<br><img src="https://img-blog.csdnimg.cn/20200616133847867.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="GitHub"><br>然后再访问部署在GitHub上的Hexo博客，也恢复正常了↓<br><img src="https://img-blog.csdnimg.cn/20200616133942223.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="Hexo"></p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>静态博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Bomb后端云的API安全码</title>
+    <url>/z_post/%E5%85%B6%E4%BB%96/Bomb/Bomb%E4%BA%91%E7%9A%84API%E5%AE%89%E5%85%A8%E7%A0%81/</url>
+    <content><![CDATA[<p>最近又用了Bomb云，按照文档要求初始化时需要Secret Key和API安全码，因为我已经连续两次忘记API安全码是个什么东西了，所以我决定记录一下。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200619231006987.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="Bomb后端云初始化"></p>
+<a id="more"></a>
+
+<p>首先Secret Key非常好找，打开应用Key就能看见<br><img src="https://img-blog.csdnimg.cn/20200619231157449.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="打开应用key"><br><img src="https://img-blog.csdnimg.cn/20200619231302225.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="应用秘钥"><br>同时我下意识地以为，API安全码也是这其中的一个，但是挨边试过都不对，最后才想到在这个地方：<br><img src="https://img-blog.csdnimg.cn/20200619231407327.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="API安全码"><br>而且文档中专门在代码下面标注了这个位置，我真是太蠢了，以后看文档得仔细一点…</p>
+]]></content>
+      <tags>
+        <tag>Bomb后端云</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>鼠标右键没有【用管理员身份运行命令行】时的解决办法</title>
+    <url>/z_post/%E5%85%B6%E4%BB%96/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E6%B2%A1%E6%9C%89%E3%80%90%E7%94%A8%E7%AE%A1%E7%90%86%E5%91%98%E8%BA%AB%E4%BB%BD%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4%E8%A1%8C%E3%80%91%E6%97%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
+    <content><![CDATA[<p>今天碰到了一个情况，要用管理员身份去执行一些指令。<br>但是我右键点击某个文件或者文件夹时，没有“用管理员身份运行”这个选项，而且网上的某些做法在window10家庭版上并不可行，那该怎么办呢？</p>
+<a id="more"></a>
+
+<p>最后发现，搜索“命令提示符”，再右键点击“以管理员身份运行”，之后再切换到指定目录就行了。<br><img src="https://img-blog.csdnimg.cn/20200616134428913.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>实用小技术：Excel+网易邮箱处理VCF与CSV文件批量添加联系人</title>
+    <url>/z_post/%E5%85%B6%E4%BB%96/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E6%9C%AF/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E6%9C%AF%EF%BC%9AExcel+%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%84%E7%90%86VCF%E4%B8%8ECSV%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%B7%BB%E5%8A%A0%E8%81%94%E7%B3%BB%E4%BA%BA/</url>
+    <content><![CDATA[<p>Excel+网易邮箱处理VCF与CSV文件批量添加联系人，简直不要太轻松。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200205170408676.png" alt="CSV、VCF文件截图"></p>
+<a id="more"></a>
+
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><ul>
+<li>VCF与CSV文件简单介绍（真的是“简单”介绍）</li>
+<li>为什么选择网易邮箱？（网易与QQ邮箱的简单对比）</li>
+<li>利用Excel+网易邮箱生成CSV与VCF文件</li>
+<li>利用网易邮箱解决CSV与VCF文件的乱码问题</li>
+</ul>
+<p><strong>一、VCF与CSV文件简单介绍</strong></p>
+<p>VCF是通讯录导出的一种格式，CSV是以纯文本形式存储表格数据的文件格式，其后缀名分别是.vcf、.csv。</p>
+<blockquote>
+<p>百度百科：<a href="https://baike.baidu.com/item/VCF/22542907" target="_blank" rel="noopener">VCF</a>    、<a href="https://baike.baidu.com/item/CSV/10739?fr=aladdin" target="_blank" rel="noopener">CSV</a></p>
+</blockquote>
+<p>看不懂？没关系。说实话我到现在都不知道我写的什么，只是为了高逼格地开个头，它们都能够存储跟联系人相关的信息。但是手机通信录和电脑通信录中的联系方式只能用VCF导入，同时也可以生成VCF文件。而一般的邮箱通信录（比如网易邮箱通信录、QQ邮箱通信录）既可以使用VCF导入联系方式，也可以使用CSV，同时也能生成这两种文件。</p>
+<p>通过上图.csv的图标就可以看出，CSV文件是可以使用Excel打开的，长这个样子：<br><img src="https://img-blog.csdnimg.cn/20200205170200547.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="Excel打开CSV文件">但是VCF文件就比较复杂了，不可以使用Excel打开，用记事本打开是这个样子的：<br><img src="https://img-blog.csdnimg.cn/20200205170650198.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="记事本打开VCF文件"><br>说了这么多，其实只是为了说明下面这个关系：<br><img src="https://img-blog.csdnimg.cn/20200205170759677.png" alt="关系图"></p>
+<ul>
+<li>手机、电脑通信录：只能识别VCF文件，不能识别CSV文件，并且可以生成（导出）VCF文件。</li>
+<li>VCF文件：可以通过通信录生成（导出）、也可以通过邮箱通信录生成（导出）。当然还有其他别的方式。</li>
+<li>网易邮箱：可以识别VCF和CSV文件，也可以生成（导出）VCF和CSV文件。</li>
+<li>CSV文件：可以导入邮箱通信录，也可以使用Excel打开，同时也可以使用邮箱通信录和Excel生成。</li>
+<li>Excel：可以打开、生成（导出）CSV文件。</li>
+</ul>
+<p><strong>二、为什么选择网易邮箱？（网易与QQ邮箱的简单对比）</strong></p>
+<p>其实网易邮箱可以做的事情，QQ也同样能做。下面说一下我自己使用起来两者的优点。<br>|名称| 优点 |<br>|–|–|<br>| 网易邮箱 |  ①导入快，是真的快，几百人的VCF文件网易也就几秒，QQ邮箱得老半天；②当CSV文件字段内容和网易邮箱字段不同时会给提示。|<br>| QQ邮箱 | ①可以使用QQ登录，对我来说更方便。 |</p>
+<p><strong>三、利用Excel+网易邮箱生成CSV与VCF文件</strong></p>
+<p>1.获得CSV文件，并添加信息重新导入</p>
+<ul>
+<li>利用网易邮箱获取</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/202002052027219.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="网易邮箱导出联系人"><br>点击网易邮箱通信录右侧的“导入导出→导出通信录”：↑<br><img src="https://img-blog.csdnimg.cn/20200205202910371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="导出CSV"><br>选择CSV格式即可获得一份CSV格式文件，然后打开文件在字段中添加内容：↑↓<br><img src="https://img-blog.csdnimg.cn/20200205203122487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>将添加信息后的CSV文件保存，重新打开网易邮箱，点击“导入导出→从文件导入通信录”：↓<br><img src="https://img-blog.csdnimg.cn/20200205203341393.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>选择好文件导入指定分组即可：↓<br><img src="https://img-blog.csdnimg.cn/20200205203451401.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<ul>
+<li>利用Excel获取</li>
+</ul>
+<p>除了利用邮箱导出字段较为完整的CSV文件，利用Excel也可以自己创建一些比较简单CSV文件，并添加一些数据。<br><img src="https://img-blog.csdnimg.cn/2020020522092685.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>新建一个Excel表格，然后添加两个字段（姓名，手机），然后添加一些内容：↑<br><img src="https://img-blog.csdnimg.cn/20200205221031217.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="另存为CSV"><br>然后另存为“CSV(逗号分隔)(*.csv)”，即可生成一个CSV文件（可导入邮箱通信录）：↑</p>
+<p>2.获得VCF文件，并将联系人导入手机、电脑通信录</p>
+<ul>
+<li>利用网易邮箱获取</li>
+</ul>
+<p>与利用网易邮箱获取CSV文件一样，点击网易邮箱通信录右侧的“导入导出→导出通信录”：↓<br><img src="https://img-blog.csdnimg.cn/20200205221359502.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="导出VCF"><br>然后将生成的文件发送给手机，使用手机通信录打开即可：↓<br><img src="https://img-blog.csdnimg.cn/20200205221536306.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>四、利用网易邮箱解决CSV与VCF文件的乱码问题</strong></p>
+<p>其实除了上述的方式，有一种专门用来编辑VCF文件的软件叫做VCF Editor（如下图）：<br><img src="https://img-blog.csdnimg.cn/20200205173948361.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>但是有些VCF文件用VCF Editor打开（或者CSV用Excel打开）会出现乱码的情况，如下图：<br><img src="https://img-blog.csdnimg.cn/20200205174103808.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>此时只是打开的VCF的字符集的问题，把出现上述问题的VCF文件导入网易邮箱通信录是不会出现乱码的。只需要导入邮箱通信录，再使用邮箱生成VCF文件，新生成的VCF文件就不会出现乱码问题了。</p>
+]]></content>
+      <tags>
+        <tag>VCF</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>对“鸿蒙”的一点看法</title>
-    <url>/z_post/%E5%AF%B9%E2%80%9C%E9%B8%BF%E8%92%99%E2%80%9D%E7%9A%84%E4%B8%80%E7%82%B9%E7%9C%8B%E6%B3%95/</url>
+    <url>/z_post/%E5%85%B6%E4%BB%96/%E6%9D%82%E8%B0%88/%E5%AF%B9%E2%80%9C%E9%B8%BF%E8%92%99%E2%80%9D%E7%9A%84%E4%B8%80%E7%82%B9%E7%9C%8B%E6%B3%95/</url>
     <content><![CDATA[<p>四月刚刚准备搞一搞Android，五月一开工，结果十几号就来了这么一茬子事。加之社会上对于Android开发的风言风语，不禁让我这个没见过什么世面的大学生在角落里ssfd，一定要好好研究一下这件事情的来龙去脉。<br>在这个过程中发现很多媒体夸大其词，误导读者，于是就来说说我的理解，也算当个笔记吧。</p>
 <a id="more"></a>
 
@@ -823,63 +895,8 @@
       </tags>
   </entry>
   <entry>
-    <title>实用小技术：Excel+网易邮箱处理VCF与CSV文件批量添加联系人</title>
-    <url>/z_post/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E6%9C%AF%EF%BC%9AExcel+%E7%BD%91%E6%98%93%E9%82%AE%E7%AE%B1%E5%A4%84%E7%90%86VCF%E4%B8%8ECSV%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E6%B7%BB%E5%8A%A0%E8%81%94%E7%B3%BB%E4%BA%BA/</url>
-    <content><![CDATA[<p>Excel+网易邮箱处理VCF与CSV文件批量添加联系人，简直不要太轻松。</p>
-<p><img src="https://img-blog.csdnimg.cn/20200205170408676.png" alt="CSV、VCF文件截图"></p>
-<a id="more"></a>
-
-<h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><ul>
-<li>VCF与CSV文件简单介绍（真的是“简单”介绍）</li>
-<li>为什么选择网易邮箱？（网易与QQ邮箱的简单对比）</li>
-<li>利用Excel+网易邮箱生成CSV与VCF文件</li>
-<li>利用网易邮箱解决CSV与VCF文件的乱码问题</li>
-</ul>
-<p><strong>一、VCF与CSV文件简单介绍</strong></p>
-<p>VCF是通讯录导出的一种格式，CSV是以纯文本形式存储表格数据的文件格式，其后缀名分别是.vcf、.csv。</p>
-<blockquote>
-<p>百度百科：<a href="https://baike.baidu.com/item/VCF/22542907" target="_blank" rel="noopener">VCF</a>    、<a href="https://baike.baidu.com/item/CSV/10739?fr=aladdin" target="_blank" rel="noopener">CSV</a></p>
-</blockquote>
-<p>看不懂？没关系。说实话我到现在都不知道我写的什么，只是为了高逼格地开个头，它们都能够存储跟联系人相关的信息。但是手机通信录和电脑通信录中的联系方式只能用VCF导入，同时也可以生成VCF文件。而一般的邮箱通信录（比如网易邮箱通信录、QQ邮箱通信录）既可以使用VCF导入联系方式，也可以使用CSV，同时也能生成这两种文件。</p>
-<p>通过上图.csv的图标就可以看出，CSV文件是可以使用Excel打开的，长这个样子：<br><img src="https://img-blog.csdnimg.cn/20200205170200547.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="Excel打开CSV文件">但是VCF文件就比较复杂了，不可以使用Excel打开，用记事本打开是这个样子的：<br><img src="https://img-blog.csdnimg.cn/20200205170650198.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="记事本打开VCF文件"><br>说了这么多，其实只是为了说明下面这个关系：<br><img src="https://img-blog.csdnimg.cn/20200205170759677.png" alt="关系图"></p>
-<ul>
-<li>手机、电脑通信录：只能识别VCF文件，不能识别CSV文件，并且可以生成（导出）VCF文件。</li>
-<li>VCF文件：可以通过通信录生成（导出）、也可以通过邮箱通信录生成（导出）。当然还有其他别的方式。</li>
-<li>网易邮箱：可以识别VCF和CSV文件，也可以生成（导出）VCF和CSV文件。</li>
-<li>CSV文件：可以导入邮箱通信录，也可以使用Excel打开，同时也可以使用邮箱通信录和Excel生成。</li>
-<li>Excel：可以打开、生成（导出）CSV文件。</li>
-</ul>
-<p><strong>二、为什么选择网易邮箱？（网易与QQ邮箱的简单对比）</strong></p>
-<p>其实网易邮箱可以做的事情，QQ也同样能做。下面说一下我自己使用起来两者的优点。<br>|名称| 优点 |<br>|–|–|<br>| 网易邮箱 |  ①导入快，是真的快，几百人的VCF文件网易也就几秒，QQ邮箱得老半天；②当CSV文件字段内容和网易邮箱字段不同时会给提示。|<br>| QQ邮箱 | ①可以使用QQ登录，对我来说更方便。 |</p>
-<p><strong>三、利用Excel+网易邮箱生成CSV与VCF文件</strong></p>
-<p>1.获得CSV文件，并添加信息重新导入</p>
-<ul>
-<li>利用网易邮箱获取</li>
-</ul>
-<p><img src="https://img-blog.csdnimg.cn/202002052027219.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="网易邮箱导出联系人"><br>点击网易邮箱通信录右侧的“导入导出→导出通信录”：↑<br><img src="https://img-blog.csdnimg.cn/20200205202910371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="导出CSV"><br>选择CSV格式即可获得一份CSV格式文件，然后打开文件在字段中添加内容：↑↓<br><img src="https://img-blog.csdnimg.cn/20200205203122487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>将添加信息后的CSV文件保存，重新打开网易邮箱，点击“导入导出→从文件导入通信录”：↓<br><img src="https://img-blog.csdnimg.cn/20200205203341393.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>选择好文件导入指定分组即可：↓<br><img src="https://img-blog.csdnimg.cn/20200205203451401.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<ul>
-<li>利用Excel获取</li>
-</ul>
-<p>除了利用邮箱导出字段较为完整的CSV文件，利用Excel也可以自己创建一些比较简单CSV文件，并添加一些数据。<br><img src="https://img-blog.csdnimg.cn/2020020522092685.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>新建一个Excel表格，然后添加两个字段（姓名，手机），然后添加一些内容：↑<br><img src="https://img-blog.csdnimg.cn/20200205221031217.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="另存为CSV"><br>然后另存为“CSV(逗号分隔)(*.csv)”，即可生成一个CSV文件（可导入邮箱通信录）：↑</p>
-<p>2.获得VCF文件，并将联系人导入手机、电脑通信录</p>
-<ul>
-<li>利用网易邮箱获取</li>
-</ul>
-<p>与利用网易邮箱获取CSV文件一样，点击网易邮箱通信录右侧的“导入导出→导出通信录”：↓<br><img src="https://img-blog.csdnimg.cn/20200205221359502.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="导出VCF"><br>然后将生成的文件发送给手机，使用手机通信录打开即可：↓<br><img src="https://img-blog.csdnimg.cn/20200205221536306.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><strong>四、利用网易邮箱解决CSV与VCF文件的乱码问题</strong></p>
-<p>其实除了上述的方式，有一种专门用来编辑VCF文件的软件叫做VCF Editor（如下图）：<br><img src="https://img-blog.csdnimg.cn/20200205173948361.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>但是有些VCF文件用VCF Editor打开（或者CSV用Excel打开）会出现乱码的情况，如下图：<br><img src="https://img-blog.csdnimg.cn/20200205174103808.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>此时只是打开的VCF的字符集的问题，把出现上述问题的VCF文件导入网易邮箱通信录是不会出现乱码的。只需要导入邮箱通信录，再使用邮箱生成VCF文件，新生成的VCF文件就不会出现乱码问题了。</p>
-]]></content>
-      <tags>
-        <tag>VCF</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>鼠标右键没有【用管理员身份运行命令行】时的解决办法</title>
-    <url>/z_post/%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E6%B2%A1%E6%9C%89%E3%80%90%E7%94%A8%E7%AE%A1%E7%90%86%E5%91%98%E8%BA%AB%E4%BB%BD%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4%E8%A1%8C%E3%80%91%E6%97%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</url>
-    <content><![CDATA[<p>今天碰到了一个情况，要用管理员身份去执行一些指令。<br>但是我右键点击某个文件或者文件夹时，没有“用管理员身份运行”这个选项，而且网上的某些做法在window10家庭版上并不可行，那该怎么办呢？</p>
-<a id="more"></a>
-
-<p>最后发现，搜索“命令提示符”，再右键点击“以管理员身份运行”，之后再切换到指定目录就行了。<br><img src="https://img-blog.csdnimg.cn/20200616134428913.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjM2MzYw,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-]]></content>
+    <title>万义中医小程序概述</title>
+    <url>/z_post/%E9%A1%B9%E7%9B%AE/%E4%B8%87%E4%B9%89%E4%B8%AD%E5%8C%BB/%E4%B8%87%E4%B9%89%E4%B8%AD%E5%8C%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
